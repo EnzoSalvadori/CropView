@@ -37,14 +37,17 @@ if (!empty($_GET['language'])){
   }
 
 }else{
-
-  if ($_COOKIE["idioma"] == "en"){
-    include("contact-us2.html");
-  }
-  elseif ($_COOKIE["idioma"] == "es"){
-    include("contact-us3.html");
-  }
-  else{
+  if (!empty($_COOKIE["idioma"])){
+    if ($_COOKIE["idioma"] == "en"){
+      include("contact-us2.html");
+    }
+    elseif ($_COOKIE["idioma"] == "es"){
+      include("contact-us3.html");
+    }
+    else{
+      include("contact-us.html");
+    }
+  }else{
     include("contact-us.html");
   }
 }

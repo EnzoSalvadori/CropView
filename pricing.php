@@ -19,14 +19,17 @@ if (!empty($_GET['language'])){
   }
 
 }else{
-
-	if ($_COOKIE["idioma"] == "en"){
-  	include("pricing2.html");
-  }
-  elseif ($_COOKIE["idioma"] == "es"){
-  	include("pricing3.html");
-  }
-  else{
+  if (!empty($_COOKIE["idioma"])){
+  	if ($_COOKIE["idioma"] == "en"){
+    	include("pricing2.html");
+    }
+    elseif ($_COOKIE["idioma"] == "es"){
+    	include("pricing3.html");
+    }
+    else{
+      include("pricing.html");
+    }
+  }else{
     include("pricing.html");
   }
 }

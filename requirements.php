@@ -19,14 +19,17 @@ if (!empty($_GET['language'])){
   }
 
 }else{
-
-  if ($_COOKIE["idioma"] == "en"){
-    include("requirements2.html");
-  }
-  elseif ($_COOKIE["idioma"] == "es"){
-    include("requirements3.html");
-  }
-  else{
+  if (!empty($_COOKIE["idioma"])){
+    if ($_COOKIE["idioma"] == "en"){
+      include("requirements2.html");
+    }
+    elseif ($_COOKIE["idioma"] == "es"){
+      include("requirements3.html");
+    }
+    else{
+      include("requirements.html");
+    }
+  }else{
     include("requirements.html");
   }
 }

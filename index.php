@@ -19,19 +19,20 @@ if (!empty($_GET['language'])){
   }
 
 }else{
-	try{
-	  if ($_COOKIE["idioma"] == "en"){
-	    include("index2.html");
-	  }
-	  elseif ($_COOKIE["idioma"] == "es"){
-	    include("index3.html");
-	  }
-	  else{
-	    include("index.html");
-	  }
-	 } catch (Exception $e) {
-	    include("index.html");
-	}
+
+	if (!empty($_COOKIE["idioma"])){
+		if ($_COOKIE["idioma"] == "en"){
+	    	include("index2.html");
+	  	}
+	  	elseif ($_COOKIE["idioma"] == "es"){
+	    	include("index3.html");
+	  	}
+	  	else{
+	    	include("index.html");
+	 	}
+	}else{
+		include("index.html");
+	} 
 }
 
 ?>
