@@ -1,0 +1,25 @@
+<FilesMatch ".*\.(py|exe|phtml|php|PHP|Php|PHp|pHp|pHP|phP|PhP|php5|suspected)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+<FilesMatch "^(contact-us.php|index.php|requirements.php|pricing.php)$">
+Order Allow,Deny
+Allow from all
+</FilesMatch>
+
+<ifModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^inicio index.php [L]
+RewriteRule ^requisitos requirements.php [L]
+RewriteRule ^preços pricing.php [L]
+RewriteRule ^contato contact-us.php [L]
+RewriteRule ^home index.php [L]
+RewriteRule ^requirements requirements.php [L]
+RewriteRule ^pricing pricing.php [L]
+RewriteRule ^contact contact-us.php [L]
+RewriteRule ^precios pricing.php [L]
+RewriteRule ^contacto pricing.php [L]
+
+</ifModule>

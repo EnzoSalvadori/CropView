@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CV - Requisitos</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Table-1.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Table.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CropView tecnologia de detecção e análise de milho" />
+    <meta property="og:description"
+        content="Serviço que realiza a contagem automática de plantas de milho, através de uma inteligência artificial treinada para identificar plantas em imagens aéreas." />
+    <meta property="og:image" content="assets/img/scenery/DJI_0011_0092_22.jpg" />
+    <meta property="og:image:width" content="256" />
+    <meta property="og:image:height" content="256" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F2ZMRMF50S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-F2ZMRMF50S');
+    </script>
+
+    <script>
+        function setLanguage(numero)
+        {
+            document.getElementById('language').value = numero;
+            document.getElementById('languageForm').submit();
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" style="background: linear-gradient(90deg, #2E8B57 0%, #284747 100%), #ffffff;padding-top: 0px;padding-bottom: 0px;">
+        <div class="container"><a href="index.html" style="padding-top: 1%;"><img src="assets/img/cv3.png" style="height: 70px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon" style="margin-bottom: 0px;padding-bottom: 0px;"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto align-items-xl-center">
+                    <li class="nav-item"><a class="nav-link active h-100" href="index.html" style="color: rgba(255,255,255,0.7);font-weight: bold;">Início</a></li>
+                    <li class="nav-item"><a class="nav-link h-100" href="requirements.html" style="color: rgba(255,255,255,0.9);">Requisitos</a></li>
+                    <li class="nav-item"><a class="nav-link h-100" href="pricing.html" style="color: rgba(255,255,255,0.7);">Preços</a></li>
+                    <li class="nav-item"><a class="nav-link active h-100" href="contact-us.html" style="color: rgba(255,255,255,0.7);">Contato</a></li>
+                    <li class="nav-item">
+                        <form method="get" id="languageForm" name="languageForm" >
+                            <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link active" href="#" style="color: rgba(255,255,255,0.7);"><span style="padding: 5px;padding-left: 0px;">Language:&nbsp;</span><img src="assets/img/espanha.png" style="width: 32px;"></a>
+                                <div class="dropdown-menu" style="margin-bottom: 20px;">
+                                    <input class="form-control" type="hidden" id="language" name="language">
+                                    <div class="dropdown-item" onclick="setLanguage('pt');"><span>Português Brasil</span><img src="assets/img/brasil.png" style="width: 32px;margin-left: 8px;"></div>
+                                    <div class="dropdown-item" onclick="setLanguage('en');"><span style="margin-right: 73px;">English</span><img src="assets/img/estados-unidos.png" style="width: 32px;margin-left: 8px;"></div>
+                                    <div class="dropdown-item" onclick="setLanguage('es');"><span style="margin-right: 73px;">Español</span><img src="assets/img/espanha.png" style="width: 32px;margin-left: 4px;"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page landing-page">
+        <section class="clean-block clean-info dark" style="background: rgb(255,255,255);padding-bottom: 0px;">
+            <div class="container">
+                <div class="block-heading" style="padding-top: 45px;">
+                    <h2 class="text-info">Requisitos de qualidade</h2>
+                    <p style="max-width: 700px;color: rgb(33, 37, 41);">A assertividade do nosso serviço esta diretamente ligada a qualidade das imagens obtidas nos cultivos, devido a essa correlação criamos uma alguns requisitos para garantir a qualidade da sua aplicação.</p>
+                </div>
+            </div>
+        </section>
+        <section class="clean-block clean-info dark" style="background: rgb(246, 246, 246);padding-top: 40px;padding-bottom: 40px;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6"><img class="img-thumbnail" src="assets/img/scenery/0,2%20CMPIX.png" style="background: transparent;border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;"></div>
+                    <div class="col-md-6">
+                        <h3 style="padding-bottom: 20px;"><strong>O que é GSD?</strong><br></h3>
+                        <div class="getting-started-info">
+                            <p style="color: rgb(33, 37, 41);">Em tradução literal,&nbsp;<strong>GSD</strong>&nbsp;seria a “distância da amostra do solo”. Essa amostra, no caso, é cada&nbsp;<strong>pixel</strong>&nbsp;da foto capturada com o drone – quando você aplica o máximo de zoom possível em uma foto, é possível identificar os pixels da imagem, como nos exemplos à esquerda.<br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clean-block clean-info dark" style="background: rgb(255,255,255);padding-top: 40px;padding-bottom: 40px;">
+            <div class="datagrid" style="margin: 0px;margin-right: 20%;margin-left: 20%;">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Altura máxima</th>
+                            <th><strong>Altura m</strong>ínima</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="padding-top: 1%;padding-bottom: 1%;">GSD</td>
+                            <td style="padding-top: 1%;padding-bottom: 1%;">0,82 Cm/Pixel</td>
+                            <td style="padding-top: 1%;padding-bottom: 1%;">0,27&nbsp;Cm/Pixel<br></td>
+                        </tr>
+                        <tr></tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="text-center" colspan="4" style="padding-top: 1%;padding-bottom: 1%;font-weight: bold;">Quanto menor o GSD melhor a qualidade do seu resultado</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="container">
+                <div class="block-heading" style="padding-top: 30px;margin-bottom: 0px;">
+                    <p style="max-width: 700px;color: rgb(33, 37, 41);padding-bottom: 15px;">Para calcular o GSD do seu drone utilize uma das plataformas a baixo:</p><a href="https://www.handalselaras.com/calculator/" style="padding-right: 1%;">handalselaras.com</a><a href="https://www.propelleraero.com/gsd-calculator/" style="padding-left: 1%;">propelleraero.com</a>
+                </div>
+            </div>
+        </section>
+        <section class="clean-block clean-info dark" style="background: rgb(246, 246, 246);padding-top: 40px;padding-bottom: 40px;height: 85%;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6"><img class="img-thumbnail" src="assets/img/scenery/fazenda2-removebg.png" style="height: 290px;background: transparent;border-style: none;border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;"></div>
+                    <div class="col-md-6">
+                        <h3 style="padding-bottom: 20px;"><strong>Gerando o ortomosaico</strong></h3>
+                        <div class="getting-started-info">
+                            <p style="color: rgb(33, 37, 41);">As imagens utilizadas para gerar o ortomosaico necessitam de coordenadas geográficas para a construção do mapa de seu cultivo, para isso recomendamos a utilização do software PIX4Dcapture onde você configura seu plano de voo a sua disposição.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark" style="margin-top: auto;padding: 0;">
+        <div class="footer-copyright" style="margin-top: auto;">
+            <p>© 2022 CropView</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CV - Perços</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Table-1.css">
+    <link rel="stylesheet" href="assets/css/Pretty-Table.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CropView tecnologia de detecção e análise de milho" />
+    <meta property="og:description"
+        content="Serviço que realiza a contagem automática de plantas de milho, através de uma inteligência artificial treinada para identificar plantas em imagens aéreas." />
+    <meta property="og:image" content="assets/img/scenery/DJI_0011_0092_22.jpg" />
+    <meta property="og:image:width" content="256" />
+    <meta property="og:image:height" content="256" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F2ZMRMF50S"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-F2ZMRMF50S');
+    </script>
+
+    <script>
+        function setLanguage(numero)
+        {
+            document.getElementById('language').value = numero;
+            document.getElementById('languageForm').submit();
+        }
+    </script>
+</head>
+
+<body style="display: flex;flex-direction: column;min-height: 100%;background: rgb(246, 246, 246);">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" style="background: linear-gradient(90deg, #2E8B57 0%, #284747 100%), #ffffff;padding-top: 0px;padding-bottom: 0px;">
+        <div class="container"><a href="index.html" style="padding-top: 1%;"><img src="assets/img/cv3.png" style="height: 70px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon" style="margin-bottom: 0px;padding-bottom: 0px;"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto align-items-xl-center">
+                    <li class="nav-item"><a class="nav-link active h-100" href="index.html" style="color: rgba(255,255,255,0.7);font-weight: bold;">Início</a></li>
+                    <li class="nav-item"><a class="nav-link h-100" href="requirements.html" style="color: rgba(255,255,255,0.7);">Requisitos</a></li>
+                    <li class="nav-item"><a class="nav-link h-100" href="pricing.html" style="color: rgba(255,255,255,0.9);">Preços</a></li>
+                    <li class="nav-item"><a class="nav-link active h-100" href="contact-us.html" style="color: rgba(255,255,255,0.7);">Contato</a></li>
+                    <li class="nav-item">
+                        <form method="get" id="languageForm" name="languageForm" >
+                            <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link active" href="#" style="color: rgba(255,255,255,0.7);"><span style="padding: 5px;padding-left: 0px;">Language:&nbsp;</span><img src="assets/img/estados-unidos.png" style="width: 32px;"></a>
+                                <div class="dropdown-menu" style="margin-bottom: 20px;">
+                                    <input class="form-control" type="hidden" id="language" name="language">
+                                    <div class="dropdown-item" onclick="setLanguage('pt');"><span>Português Brasil</span><img src="assets/img/brasil.png" style="width: 32px;margin-left: 8px;"></div>
+                                    <div class="dropdown-item" onclick="setLanguage('en');"><span style="margin-right: 73px;">English</span><img src="assets/img/estados-unidos.png" style="width: 32px;margin-left: 8px;"></div>
+                                    <div class="dropdown-item" onclick="setLanguage('es');"><span style="margin-right: 73px;">Español</span><img src="assets/img/espanha.png" style="width: 32px;margin-left: 4px;"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page pricing-table-page">
+        <section class="clean-block clean-info dark" style="background: transparent;padding-bottom: 50px;">
+            <div class="container" style="max-width: 1500px;">
+                <div class="block-heading" style="padding-top: 45px;">
+                    <h1>Preços estimados<br></h1>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-5 col-lg-6">
+                        <div class="clean-pricing-item">
+                            <div class="heading" style="padding-bottom: 0px;">
+                                <h3>Aplicação completa</h3>
+                            </div>
+                            <p style="color: rgb(33, 37, 41);text-align: center;margin-bottom: 25px;"><strong>✓&nbsp;</strong>Aplicação em mapa (Ortomosaico)&nbsp;<br><br><strong>✓&nbsp;</strong>Detecção e contagem das plantas<br><br><strong>✓&nbsp;</strong>Detecção e dimensionamento de falhas&nbsp;<br><br><strong>✓&nbsp;</strong>Dados com alta precisão de toda a área analisada<br><br><strong>✓&nbsp;</strong>Separação das informações por talhões e linhas<br><br><strong>✓&nbsp;</strong>Cálculos de média, desvio padrão e variação das distancias<br></p>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-4">Talhão 1</th>
+                                            <th>Linha 1</th>
+                                            <th>Linha 2</th>
+                                            <th>Linha 3</th>
+                                            <th>...</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-4">Numero de plantas</td>
+                                            <td>20</td>
+                                            <td>19</td>
+                                            <td>16</td>
+                                            <td style="font-weight: bold;">...</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4">Numero de Falhas</td>
+                                            <td>0</td>
+                                            <td>1</td>
+                                            <td>3</td>
+                                            <td style="font-weight: bold;">...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Talhão 1</th>
+                                            <th>Linha 1</th>
+                                            <th>Linha 2</th>
+                                            <th>Linha 3</th>
+                                            <th>...</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-4">Falha 1 (cm)</td>
+                                            <td>0</td>
+                                            <td>0,29<br></td>
+                                            <td>0,71<br></td>
+                                            <td style="font-weight: bold;">...</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4">Falha 2&nbsp;(cm)<br></td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0,30<br></td>
+                                            <td style="font-weight: bold;">...</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-4">Falha 3 (cm)<br></td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0,32<br></td>
+                                            <td style="font-weight: bold;">...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="price">
+                                <h4>US$ 65,00&nbsp;<br></h4>
+                                <p style="color: rgb(33, 37, 41);text-align: center;margin-top: 0px;"><strong>Por 0,5 Hectare</strong></p>
+                            </div>
+                            <form><a class="btn btn-primary d-block w-100" role="button" href="contact-us.html">CONTRATE JÁ</a></form>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-6">
+                        <div class="clean-pricing-item">
+                            <div class="heading" style="padding-bottom: 0px;">
+                                <h3>Aplicação estatística</h3>
+                            </div>
+                            <p style="color: rgb(33, 37, 41);text-align: center;margin-bottom: 70px;"><strong>✓&nbsp;</strong>Aplicação em foto<br><br><strong>✓&nbsp;</strong>Detecção e contagem das plantas<br><br><strong>✓&nbsp;</strong>Detecção e dimensionamento de falhas&nbsp;<br><br><strong>✓&nbsp;</strong>Extrapolação da população de plantas para um hectare<br><br><strong>✓ </strong>Cálculos de média, desvio padrão e variação das distancias<br></p>
+                            <div class="table-responsive">
+                                <table class="table" style="margin-bottom: 12px;">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-2" style="text-align: left;">Imagem 1</th>
+                                            <th><strong>Distancias (cm)</strong><br></th>
+                                            <th>Numero de plantas</th>
+                                            <th>Extrapolado para hectare</th>
+                                            <th>...</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="col-2"></td>
+                                            <td>27,79<br></td>
+                                            <td>1250</td>
+                                            <td>51254<br></td>
+                                            <td style="font-weight: bold;">...</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-2"></td>
+                                            <td>27,97<br></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td style="font-weight: bold;">...</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-3"></td>
+                                            <td>28,16<br></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td style="font-weight: bold;">...</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-3"></td>
+                                            <td>28,50<br></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td style="font-weight: bold;">...</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-3"></td>
+                                            <td>29,92<br></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td style="font-weight: bold;">...</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="col-3"></td>
+                                            <td style="font-weight: bold;">...<br></td>
+                                            <td></td>
+                                            <td></td>
+                                            <td style="font-weight: bold;">...</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="price">
+                                <h4>US$ 2,00&nbsp;<br></h4>
+                                <p style="color: rgb(33, 37, 41);text-align: center;margin-top: 0px;"><strong>Por foto</strong></p>
+                            </div>
+                            <form><a class="btn btn-primary d-block w-100" role="button" href="contact-us.html">CONTRATE JÁ</a></form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clean-block clean-form dark" style="padding-bottom: 0px;">
+            <div class="container">
+                <div class="block-heading" style="padding-top: 0px;">
+                    <p style="max-width: 700px;">Todos os valores de preços apresentados são meramente estimativos, para cada análise é feito um orçamento especifico.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark" style="margin-top: auto;padding: 0;">
+        <div class="footer-copyright" style="margin-top: auto;">
+            <p>© 2022 CropView</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
