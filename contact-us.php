@@ -9,12 +9,12 @@ if (!empty($_POST))
     $message = $_POST['message'];
     $idioma = $_COOKIE["idioma"];
 
-    $formcontent=" From: $name \n E-mail: $email \n Phone: $phone \n Message: $message";
+    $formcontent=" From: $name $lastName \n E-mail: $email \n Phone: $phone \n Message: $message";
     $recipient = "contato@cropview.com.br";
     $subject = "CropView - Formulário de $assunto";
     $mailheader = "From: ... \r\n";
     mail($recipient, $subject, $formcontent, $mailheader) or die("Erro ao enviar mensagem! Tente novamente ou entre em contato direto pelo e-mail contato@cropview.com.br!");
-    #header("Location: /");
+    header("Location: /");
     exit();
 }
 
