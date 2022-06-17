@@ -19,6 +19,7 @@ if (!empty($_POST['credential']) && !empty($_POST['g_csrf_token'])) {
 	$payload = $client->verifyIdToken($_POST['credential']);
 	if (isset($payload['email'])) {
 	   $_SESSION['username'] =  $payload['name'];
+	   $_SESSION['email'] =  $payload['email'];
        header("Location: /teste.php");
 	} else {
 	  $mensagem = "Erro ao logar com o google";
@@ -38,6 +39,7 @@ if (!empty($_POST['email'])) {
   }else{
     if(password_verify($data['senha'],$usuario['senha'])){
        $_SESSION['username'] =  explode("@",$data['email'])[0];
+       $_SESSION['email'] =  $data['email'];
        header("Location: /teste.php");
     }else{
        $mensagem = "Senha incorreta";

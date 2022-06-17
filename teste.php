@@ -9,6 +9,7 @@ if (isset($_SESSION['username'])){
    
     $data['createdOn'] = new MongoDB\BSON\UTCDateTime;
     $data['filePath'] = $_FILES['imagem']['name'];
+    $data['ID_email'] = $_SESSION['email'];
 
     move_uploaded_file($_FILES['imagem']['tmp_name'], 'images/'.$_FILES['imagem']['name']);
 
