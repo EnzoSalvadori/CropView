@@ -24,9 +24,8 @@ RewriteRule ^contacto pricing.php [L]
 
 </ifModule>
 
-# STRONG HTACCESS PROTECTION
-<Files ~ "^.*\.([Hh][Tt][Aa])">
-order allow,deny
-deny from all
-satisfy all
+# Protect the htaccess file
+<Files .htaccess>
+Order Allow,Deny
+Deny from all
 </Files>
