@@ -1,3 +1,12 @@
+<FilesMatch ".*\.(py|exe|phtml|php|PHP|Php|PHp|pHp|pHP|phP|PhP|php5|suspected)$">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+<FilesMatch "^(contact-us.php|index.php|requirements.php|pricing.php)$">
+Order Allow,Deny
+Allow from all
+</FilesMatch>
+
 <ifModule mod_rewrite.c>
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
