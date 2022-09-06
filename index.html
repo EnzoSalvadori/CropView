@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" />
-	 <link rel="stylesheet"
+    <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" />
@@ -32,20 +32,19 @@
     <meta property="og:image:width" content="256" />
     <meta property="og:image:height" content="256" />
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232923384-1">
-	</script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-
-	  gtag('config', 'UA-232923384-1');
-	</script>
-	
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232923384-1">
+    </script>
     <script>
-        function setLanguage(numero)
-        {
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-232923384-1');
+    </script>
+
+    <script>
+        function setLanguage(numero) {
             document.getElementById('language').value = numero;
             document.getElementById('languageForm').submit();
         }
@@ -53,22 +52,42 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" style="background: linear-gradient(90deg, #2E8B57 0%, #284747 100%), #ffffff;padding-top: 0px;padding-bottom: 0px;">
-        <div class="container"><a href="inicio" style="padding-top: 1%;"><img src="assets/img/cv3.webp" alt="Logo CropView" style="height: 70px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon" style="margin-bottom: 0px;padding-bottom: 0px;"></span></button>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar"
+        style="background: linear-gradient(90deg, #2E8B57 0%, #284747 100%), #ffffff;padding-top: 0px;padding-bottom: 0px;">
+        <div class="container"><a href="inicio" style="padding-top: 1%;"><img src="assets/img/cv3.webp"
+                    alt="Logo CropView" style="height: 70px;"></a><button data-bs-toggle="collapse"
+                class="navbar-toggler" data-bs-target="#navcol-1"
+                style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span
+                    class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"
+                    style="margin-bottom: 0px;padding-bottom: 0px;"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto align-items-xl-center">
-                    <li class="nav-item"><a class="nav-link active h-100" href="inicio" style="color: rgba(255,255,255,0.9);font-weight: bold;">Início</a></li>
-                    <li class="nav-item"><a class="nav-link h-100" href="requisitos" style="color: rgba(255,255,255,0.7);">Requisitos</a></li>
-                    <li class="nav-item"><a class="nav-link h-100" href="preços" style="color: rgba(255,255,255,0.7);">Preços</a></li>
-                    <li class="nav-item"><a class="nav-link active h-100" href="contato" style="color: rgba(255,255,255,0.7);">contato</a></li>
+                    <li class="nav-item"><a class="nav-link active h-100" href="inicio"
+                            style="color: rgba(255,255,255,0.9);font-weight: bold;">Início</a></li>
+                    <li class="nav-item"><a class="nav-link h-100" href="requisitos"
+                            style="color: rgba(255,255,255,0.7);">Requisitos</a></li>
+                    <li class="nav-item"><a class="nav-link h-100" href="preços"
+                            style="color: rgba(255,255,255,0.7);">Preços</a></li>
+                    <li class="nav-item"><a class="nav-link active h-100" href="contato"
+                            style="color: rgba(255,255,255,0.7);">contato</a></li>
                     <li class="nav-item">
-                        <form method="get" id="languageForm" name="languageForm" >
-                            <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link active" href="#" style="color: rgba(255,255,255,0.7);"><span style="padding: 5px;padding-left: 0px;">Language:&nbsp;</span><img src="assets/img/brasil.webp" style="width: 32px;"></a>
+                        <form method="get" id="languageForm" name="languageForm">
+                            <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown"
+                                    class="nav-link active" href="#" style="color: rgba(255,255,255,0.7);"><span
+                                        style="padding: 5px;padding-left: 0px;">Language:&nbsp;</span><img
+                                        src="assets/img/brasil.webp" style="width: 32px;"></a>
                                 <div class="dropdown-menu" style="margin-bottom: 20px;">
                                     <input class="form-control" type="hidden" id="language" name="language">
-                                    <div class="dropdown-item" onclick="setLanguage('pt');"><span>Português Brasil</span><img src="assets/img/brasil.webp" style="width: 32px;margin-left: 8px;"></div>
-                                    <div class="dropdown-item" onclick="setLanguage('en');"><span style="margin-right: 73px;">English</span><img src="assets/img/estados-unidos.webp" style="width: 32px;margin-left: 8px;"></div>
-                                    <div class="dropdown-item" onclick="setLanguage('es');"><span style="margin-right: 73px;">Español</span><img src="assets/img/espanha.webp" style="width: 32px;margin-left: 4px;"></div>
+                                    <div class="dropdown-item" onclick="setLanguage('pt');"><span>Português
+                                            Brasil</span><img src="assets/img/brasil.webp"
+                                            style="width: 32px;margin-left: 8px;"></div>
+                                    <div class="dropdown-item" onclick="setLanguage('en');"><span
+                                            style="margin-right: 73px;">English</span><img
+                                            src="assets/img/estados-unidos.webp" style="width: 32px;margin-left: 8px;">
+                                    </div>
+                                    <div class="dropdown-item" onclick="setLanguage('es');"><span
+                                            style="margin-right: 73px;">Español</span><img src="assets/img/espanha.webp"
+                                            style="width: 32px;margin-left: 4px;"></div>
                                 </div>
                             </div>
                         </form>
@@ -78,10 +97,13 @@
         </div>
     </nav>
     <main class="page landing-page">
-        <section class="clean-block clean-hero" style="color: rgba(24,57,43,0.77);border-color: rgba(9, 162, 255, 0.85);border-top-color: rgba(9,;border-right-color: 162,;border-bottom-color: 255,;border-left-color: 0.85);opacity: 1;background: url(&quot;assets/img/cropview-campo.webp&quot;) center / cover;min-height: 490px;">
+        <section class="clean-block clean-hero"
+            style="color: rgba(24,57,43,0.77);border-color: rgba(9, 162, 255, 0.85);border-top-color: rgba(9,;border-right-color: 162,;border-bottom-color: 255,;border-left-color: 0.85);opacity: 1;background: url(&quot;assets/img/cropview-campo.webp&quot;) center / cover;min-height: 490px;">
             <div class="justify-content-end align-items-center text" style="width: 850px;max-width: 850px;">
-                <h2 style="font-size: 49px;min-width: 0px;transform: scale(1);"><br>A tecnologia de detecção e análise para facilitar seu trabalho<br></h2>
-                <p class="d-flex align-items-end"><br>CropView é um Serviço que realiza a contagem automática de plantas através de uma inteligência artificial treinada para detectá-las em imagens aéreas.<br><br></p>
+                <h2 style="font-size: 49px;min-width: 0px;transform: scale(1);"><br>A tecnologia de detecção e análise
+                    para facilitar seu trabalho<br></h2>
+                <p class="d-flex align-items-end"><br>CropView é um Serviço que realiza a contagem automática de plantas
+                    através de uma inteligência artificial treinada para detectá-las em imagens aéreas.<br><br></p>
             </div>
         </section>
         <section class="clean-block clean-info dark" style="background: transparent;padding-bottom: 80px;">
@@ -94,22 +116,44 @@
                         <div class="clean-pricing-item">
                             <div class="heading" style="padding-bottom: 0px;border-bottom-style: none;">
                                 <h3>Aplicação completa</h3>
-                                <div class="card" style="border-style: none;"><video autoplay loop muted> <source class="card-img-top w-100 d-block" src="assets/img/cropview-aplicacao-completa.webm"></video></div>
+                                <div class="card" style="border-style: none;"><video autoplay loop muted>
+                                        <source class="card-img-top w-100 d-block"
+                                            src="assets/img/cropview-aplicacao-completa.webm">
+                                    </video></div>
                             </div>
-                            <p style="color: var(--bs-gray-900);text-align: center;font-size: 11px;margin: 0px;margin-top: 10px;">* Representação real da análise</p>
-                            <p style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;"><br>Análise por um mapa digital (Ortomosaico), construído<br>pela junção de várias fotos em uma só. <br><br>Essa análise possui os valores mais próximos da realidade,<br> recomendada para áreas de pesquisas que necessitam de informações mais precisas em áreas menores.<br><br></p>
-                            <form><a class="btn btn-primary d-block w-100" role="button" href="preços">SAIBA MAIS</a></form>
+                            <p
+                                style="color: var(--bs-gray-900);text-align: center;font-size: 11px;margin: 0px;margin-top: 10px;">
+                                * Representação real da análise</p>
+                            <p
+                                style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;">
+                                <br>Análise por um mapa digital (Ortomosaico), construído<br>pela junção de várias fotos
+                                em uma só. <br><br>Essa análise possui os valores mais próximos da realidade,<br>
+                                recomendada para áreas de pesquisas que necessitam de informações mais precisas em áreas
+                                menores.<br><br></p>
+                            <form><a class="btn btn-primary d-block w-100" role="button" href="preços">SAIBA MAIS</a>
+                            </form>
                         </div>
                     </div>
                     <div class="col-md-5 col-lg-6">
                         <div class="clean-pricing-item">
                             <div class="heading" style="padding-bottom: 0px;border-bottom-style: none;">
                                 <h3>Aplicação estatística<br></h3>
-                                <div class="card" style="border-style: none;"><video autoplay loop muted> <source class="card-img-top w-100 d-block"  src="assets/img/cropview-aplicacao-estatistica.webm"></video></div>
+                                <div class="card" style="border-style: none;"><video autoplay loop muted>
+                                        <source class="card-img-top w-100 d-block"
+                                            src="assets/img/cropview-aplicacao-estatistica.webm">
+                                    </video></div>
                             </div>
-                            <p style="color: var(--bs-gray-900);text-align: center;font-size: 11px;margin: 0px;margin-top: 10px;">* Simulação da análise</p>
-                            <p style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;"><br>Análise foto a foto, onde cada foto representa uma porcentagem da área de produção.<br><br> Os valores da contagem são extrapolados para obter uma estimativa da área total, o que viabiliza a aplicação em áreas de grandes extensões, onde construir um Ortomosaicos de alta resolução é inviável.<br><br></p>
-                            <form><a class="btn btn-primary d-block w-100" role="button" href="preços">SAIBA MAIS</a></form>
+                            <p
+                                style="color: var(--bs-gray-900);text-align: center;font-size: 11px;margin: 0px;margin-top: 10px;">
+                                * Simulação da análise</p>
+                            <p
+                                style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;">
+                                <br>Análise foto a foto, onde cada foto representa uma porcentagem da área de
+                                produção.<br><br> Os valores da contagem são extrapolados para obter uma estimativa da
+                                área total, o que viabiliza a aplicação em áreas de grandes extensões, onde construir um
+                                Ortomosaicos de alta resolução é inviável.<br><br></p>
+                            <form><a class="btn btn-primary d-block w-100" role="button" href="preços">SAIBA MAIS</a>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -122,7 +166,10 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col">
-                        <div class="card" style="background: transparent;border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;"><img class="card-img-top w-100 d-block d-grid" alt="Sistema de detecção de plantas CropView" src="assets/img/sistema-cropview.webp"></div>
+                        <div class="card"
+                            style="background: transparent;border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;">
+                            <img class="card-img-top w-100 d-block d-grid" alt="Sistema de detecção de plantas CropView"
+                                src="assets/img/sistema-cropview.webp"></div>
                     </div>
                 </div>
             </div>
@@ -132,29 +179,33 @@
                 <div class="block-heading" style="padding-top: 60px;">
                     <h2 class="text-info">Recursos</h2>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center" style="border-bottom-width: 1px;border-bottom-style: solid; margin-bottom: 50px">
                     <div class="col-md-5 feature-box"><i class="material-icons icon">gps_fixed</i>
-                        <h4>Contagem de plantas</h4>
-                        <p>A contagem precisa de plantas é fundamental para estimar a produtividade de sementes através da população.<br><br></p>
+                        <h4 style="font-size: 23px;">Contagem de plantas</h4>
+                        <p>Contagem precisa de plantas <b>fundamental para estimar a produtividade</b> através
+                            da população.<br><br></p>
                     </div>
                     <div class="col-md-5 feature-box"><i class="icon-graph icon"></i>
-                        <h4>Detecção e medição de falhas</h4>
-                        <p>As falhas demonstram áreas perdidas no cultivo, estimando seus tamanhos obtemos o inverso da informação da contagem.</p>
+                        <h4 style="font-size: 23px;">Detecção e medição de falhas</h4>
+                        <p>As falhas demonstram <b>áreas perdidas no cultivo</b>, estimando seus tamanhos obtemos o inverso da
+                            informação da contagem.</p>
                     </div>
                     <div class="col-md-5 feature-box"><i class="icon-check icon"></i>
-                        <h4>Alta precisão&nbsp;</h4>
-                        <p>Nossa precisão de contagem garante uma validação acima dos 95%.<br><br></p>
+                        <h4 style="font-size: 23px;">Alta precisão&nbsp;</h4>
+                        <p>Nossa precisão de contagem garante uma validação <b>acima dos 95%.</b><br><br></p>
                     </div>
-                    <div class="col-md-5 feature-box"><i class="icon-layers icon"></i>
-                        <h4>Automatização&nbsp;</h4>
-                        <p>Todo o processo de detecção é feito de forma automatizada pelo nosso sistema, você só necessita de enviar suas imagens.</p>
+                    <div class="col-md-5 feature-box"><i class="icon-control-play icon"></i>
+                        <h4 style="font-size: 23px;">Velociade e automação&nbsp;</h4>
+                        <p>Processo gerado de forma automatizada pelo nosso sistema,<br> <b>70 vezes mais rapido</b> que uma contagem manual.</p>
                     </div>
                 </div>
-
-		<div class="owl-carousel owl-theme">
-			 <div class="item">
+                <div class="block-heading" style="padding-top: 30px;">
+                    <h2 >Cultivos de aplicação</h2>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
                         <div class="card border-0 shadow">
-                           <img src="images/IMG_3301 (1).jpg" alt="" class="card-img-top">
+                            <img src="images/IMG_3301 (1).jpg" alt="" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center">
                                     <h4>MILHO</h4>
@@ -162,9 +213,9 @@
                             </div>
                         </div>
                     </div>
-			 <div class="item">
+                    <div class="item">
                         <div class="card border-0 shadow">
-                           <img src="images/IMG_3301 (1).jpg" alt="" class="card-img-top">
+                            <img src="images/IMG_3301 (1).jpg" alt="" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center">
                                     <h4>SOJA</h4>
@@ -172,9 +223,9 @@
                             </div>
                         </div>
                     </div>
-				 <div class="item">
+                    <div class="item">
                         <div class="card border-0 shadow">
-                           <img src="images/IMG_3301 (1).jpg" alt="" class="card-img-top">
+                            <img src="images/IMG_3301 (1).jpg" alt="" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center">
                                     <h4>EUCALIPTO</h4>
@@ -182,7 +233,7 @@
                             </div>
                         </div>
                     </div>
-				 <div class="item">
+                    <div class="item">
                         <div class="card border-0 shadow">
                             <img src="images/IMG_3301 (1).jpg" alt="" class="card-img-top">
                             <div class="card-body">
@@ -192,8 +243,8 @@
                             </div>
                         </div>
                     </div>
-			 </div>
-		</div>	
+                </div>
+            </div>
         </section>
         <section class="clean-block clean-info dark">
             <div class="container">
@@ -202,7 +253,9 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" alt="Logo Stine sementes" src="assets/img/avatars/stine-logo.webp" style="max-height: 400px;">
+                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block"
+                                alt="Logo Stine sementes" src="assets/img/avatars/stine-logo.webp"
+                                style="max-height: 400px;">
                             <div class="card-body info" style="background: rgba(227,227,227,0.79);max-height: 87px;">
                                 <h4 class="card-title"><strong>STINE SEMENTES</strong></h4>
                             </div>
@@ -230,8 +283,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="assets/js/vanilla-zoom.js"></script>
     <script src="assets/js/theme.js"></script>
-	
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
@@ -258,7 +311,7 @@
             }
         })
     </script>
-	
+
 </body>
 
 </html>
