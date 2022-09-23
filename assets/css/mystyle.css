@@ -30,11 +30,22 @@
   opacity: 0.25;
 }
 .owl-carousel .owl-prev {
-  left: -35px;
+    font-size: 2rem;
+    padding: 6px;
+    height: auto;
+    width: auto;
+    top: 180px!important;
+    left: -35px;
 }
 .owl-carousel .owl-next {
-  right: -35px;
+    font-size: 2rem;
+    padding: 6px;
+    height: auto;
+    width: auto;
+    top: 180px!important;
+    right: -35px;
 }
+
 .owl-theme .owl-nav [class*=owl-] {
   color: #ffffff;
   font-size: 39px;
