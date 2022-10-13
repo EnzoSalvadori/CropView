@@ -14,7 +14,7 @@ if (!empty($_POST))
     {
       $formcontent=" From: $name $lastName \n E-mail: $email \n Phone: $phone \n Message: $message";
       $recipient = "contato@cropview.com.br";
-      $subject = "CropView - Formulário de $assunto";
+      $subject = "CropView - Formulário de $assunto $soma";
       $mailheader = "From: ... \r\n";
       mail($recipient, $subject, $formcontent, $mailheader) or die("Erro ao enviar mensagem! Tente novamente ou entre em contato direto pelo e-mail contato@cropview.com.br!");
       header("Location: /");
