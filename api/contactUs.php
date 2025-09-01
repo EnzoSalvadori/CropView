@@ -32,28 +32,28 @@ if (!empty($_GET['language'])){
     );
 
   if ($idioma == "en"){
-    include("contact-us2.html");
+    include("contactUs2.html");
   }
   elseif ($idioma == "es"){
-    include("contact-us3.html");
+    include("contactUs3.html");
   }
   else{
-    include("contact-us.html");
+    include("contactUs.html");
   }
 
 }else{
   if (!empty($_COOKIE["idioma"])){
     if ($_COOKIE["idioma"] == "en"){
-      include("contact-us2.html");
+      include("contactUs2.html");
     }
     elseif ($_COOKIE["idioma"] == "es"){
-      include("contact-us3.html");
+      include("contactUs3.html");
     }
     else{
-      include("contact-us.html");
+      include("contactUs.html");
     }
   }else{
-    include("contact-us.html");
+    include("contactUs.html");
   }
 }
 
