@@ -14,13 +14,13 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^inicio index.php [L]
 RewriteRule ^requisitos requirements.php [L]
 RewriteRule ^preços pricing.php [L]
-RewriteRule ^contato contact-us.php [L]
+RewriteRule ^contato contactUs.php [L]
 RewriteRule ^home index.php [L]
 RewriteRule ^requirements requirements.php [L]
 RewriteRule ^pricing pricing.php [L]
-RewriteRule ^contact contact-us.php [L]
+RewriteRule ^contact contactUs.php [L]
 RewriteRule ^precios pricing.php [L]
-RewriteRule ^contacto pricing.php [L]
+RewriteRule ^contacto contactUs.php [L]
 
 </ifModule>
 
