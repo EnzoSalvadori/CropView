@@ -38,7 +38,7 @@ if (!empty($_GET['language'])){
     include("contactUs3.html");
   }
   else{
-    include("contactUs.html");
+    include("contactUs1.html");
   }
 
 }else{
@@ -50,10 +50,10 @@ if (!empty($_GET['language'])){
       include("contactUs3.html");
     }
     else{
-      include("contactUs.html");
+      include("contactUs1.html");
     }
   }else{
-    include("contactUs.html");
+    include("contactUs1.html");
   }
 }
 

@@ -15,7 +15,7 @@ if (!empty($_GET['language'])){
   	include("pricing3.html");
   }
   else{
-    include("pricing.html");
+    include("pricing1.html");
   }
 
 }else{
@@ -27,10 +27,10 @@ if (!empty($_GET['language'])){
     	include("pricing3.html");
     }
     else{
-      include("pricing.html");
+      include("pricing1.html");
     }
   }else{
-    include("pricing.html");
+    include("pricing1.html");
   }
 }
 

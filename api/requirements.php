@@ -15,7 +15,7 @@ if (!empty($_GET['language'])){
     include("requirements3.html");
   }
   else{
-    include("requirements.html");
+    include("requirements1.html");
   }
 
 }else{
@@ -27,10 +27,10 @@ if (!empty($_GET['language'])){
       include("requirements3.html");
     }
     else{
-      include("requirements.html");
+      include("requirements1.html");
     }
   }else{
-    include("requirements.html");
+    include("requirements1.html");
   }
 }
 

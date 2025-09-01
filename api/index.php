@@ -15,7 +15,7 @@ if (!empty($_GET['language'])){
     include("index3.html");
   }
   else{
-    include("index.html");
+    include("index1.html");
   }
 
 }else{
@@ -28,10 +28,10 @@ if (!empty($_GET['language'])){
 	    	include("index3.html");
 	  	}
 	  	else{
-	    	include("index.html");
+	    	include("index1.html");
 	 	}
 	}else{
-		include("index.html");
+		include("index1.html");
 	} 
 }
 
