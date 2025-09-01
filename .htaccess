@@ -2,7 +2,7 @@
 Order Allow,Deny
 Deny from all
 </FilesMatch>
-<FilesMatch "^(contact-us.php|index.php|requirements.php|pricing.php)$">
+<FilesMatch "^(contactUs.php|index.php|requirements.php|pricing.php)$">
 Order Allow,Deny
 Allow from all
 </FilesMatch>
