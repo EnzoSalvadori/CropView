@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>CV - Início</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
-    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="static/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="static/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="static/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
@@ -19,17 +19,17 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="assets/css/mystyle.css">
-    <link rel="stylesheet" href="assets/css/Pretty-Table-1.css">
-    <link rel="stylesheet" href="assets/css/Pretty-Table.css">
-    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
-    <link rel="icon" type="image/x-icon" href="assets/img/cv2.webp" />
+    <link rel="stylesheet" href="static/css/mystyle.css">
+    <link rel="stylesheet" href="static/css/Pretty-Table-1.css">
+    <link rel="stylesheet" href="static/css/Pretty-Table.css">
+    <link rel="stylesheet" href="static/css/vanilla-zoom.min.css">
+    <link rel="icon" type="image/x-icon" href="static/img/cv2.webp" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="CropView tecnologia de detecção e análise de plantas" />
     <meta property="og:description"
         content="Serviço que realiza a contagem automática de plantas, por meio de uma inteligência artificial treinada para detectá-las em imagens aéreas." />
-    <meta property="og:image" content="assets/img/scenery/cropview-contagem-de-plantas.webp" />
+    <meta property="og:image" content="static/img/scenery/cropview-contagem-de-plantas.webp" />
     <meta property="og:image:width" content="256" />
     <meta property="og:image:height" content="256" />
 
@@ -55,7 +55,7 @@
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar"
         style="background: linear-gradient(90deg, #2E8B57 0%, #284747 100%), #ffffff;padding-top: 0px;padding-bottom: 0px;">
-        <div class="container"><a href="inicio" style="padding-top: 1%;"><img src="assets/img/cv3.webp"
+        <div class="container"><a href="inicio" style="padding-top: 1%;"><img src="static/img/cv3.webp"
                     alt="Logo CropView" style="height: 70px;"></a><button data-bs-toggle="collapse"
                 class="navbar-toggler" data-bs-target="#navcol-1"
                 style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span
@@ -72,22 +72,22 @@
                     <li class="nav-item"><a class="nav-link active h-100" href="contato"
                             style="color: rgba(255,255,255,0.7);">Contato</a></li>
                     <li class="nav-item">
-                        <form method="get" id="languageForm" name="languageForm">
+                        <form method="post" id="languageForm" name="languageForm" action="{{ url_for('set_language') }}">
                             <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown"
                                     class="nav-link active" href="#" style="color: rgba(255,255,255,0.7);"><span
                                         style="padding: 5px;padding-left: 0px;">Language:&nbsp;</span><img
-                                        src="assets/img/brasil.webp" style="width: 32px;"></a>
+                                        src="static/img/brasil.webp" style="width: 32px;"></a>
                                 <div class="dropdown-menu" style="margin-bottom: 20px;">
                                     <input class="form-control" type="hidden" id="language" name="language">
                                     <div class="dropdown-item" onclick="setLanguage('pt');"><span>Português
-                                            Brasil</span><img src="assets/img/brasil.webp"
+                                            Brasil</span><img src="static/img/brasil.webp"
                                             style="width: 32px;margin-left: 8px;"></div>
                                     <div class="dropdown-item" onclick="setLanguage('en');"><span
                                             style="margin-right: 73px;">English</span><img
-                                            src="assets/img/estados-unidos.webp" style="width: 32px;margin-left: 8px;">
+                                            src="static/img/estados-unidos.webp" style="width: 32px;margin-left: 8px;">
                                     </div>
                                     <div class="dropdown-item" onclick="setLanguage('es');"><span
-                                            style="margin-right: 73px;">Español</span><img src="assets/img/espanha.webp"
+                                            style="margin-right: 73px;">Español</span><img src="static/img/espanha.webp"
                                             style="width: 32px;margin-left: 4px;"></div>
                                 </div>
                             </div>
@@ -99,7 +99,7 @@
     </nav>
     <main class="page landing-page">
         <section class="clean-block clean-hero"
-            style="color: rgba(24,57,43,0.77);border-color: rgba(9, 162, 255, 0.85);border-top-color: rgba(9,;border-right-color: 162,;border-bottom-color: 255,;border-left-color: 0.85);opacity: 1;background: url(&quot;assets/img/cropview-campo.webp&quot;) center / cover;min-height: 490px;">
+            style="color: rgba(24,57,43,0.77);border-color: rgba(9, 162, 255, 0.85);border-top-color: rgba(9,;border-right-color: 162,;border-bottom-color: 255,;border-left-color: 0.85);opacity: 1;background: url(&quot;static/img/cropview-campo.webp&quot;) center / cover;min-height: 490px;">
             <div class="justify-content-end align-items-center text" style="width: 850px;max-width: 850px;">
                 <h2 style="font-size: 49px;min-width: 0px;transform: scale(1);"><br>A tecnologia de detecção e análise
                     para facilitar seu trabalho<br></h2>
@@ -119,7 +119,7 @@
                                 <h3>Aplicação completa</h3>
                                 <div class="card" style="border-style: none;"><video autoplay loop muted>
                                         <source class="card-img-top w-100 d-block"
-                                            src="assets/img/cropview-aplicacao-completa.webm">
+                                            src="static/img/cropview-aplicacao-completa.webm">
                                     </video></div>
                             </div>
                             <p
@@ -142,7 +142,7 @@
                                 <h3>Aplicação estatística<br></h3>
                                 <div class="card" style="border-style: none;"><video autoplay loop muted>
                                         <source class="card-img-top w-100 d-block"
-                                            src="assets/img/cropview-aplicacao-estatistica.webm">
+                                            src="static/img/cropview-aplicacao-estatistica.webm">
                                     </video></div>
                             </div>
                             <p
@@ -172,7 +172,7 @@
                         <div class="card"
                             style="background: transparent;border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;">
                             <img class="card-img-top w-100 d-block d-grid" alt="Sistema de detecção de plantas CropView"
-                                src="assets/img/sistema-cropview.webp">
+                                src="static/img/sistema-cropview.webp">
                         </div>
                     </div>
                 </div>
@@ -214,7 +214,7 @@
                 <div class="owl-carousel owl-theme">
                     <div class="item">
                         <div class="card border-0 shadow">
-                            <img src="images/milho.webp" alt="" class="card-img-top">
+                            <img src="static/img/milho.webp" alt="" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center">
                                     <h4>MILHO</h4>
@@ -224,7 +224,7 @@
                     </div>
                     <div class="item">
                         <div class="card border-0 shadow">
-                            <img src="images/soja.webp" alt="" class="card-img-top">
+                            <img src="static/img/soja.webp" alt="" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center">
                                     <h4>SOJA</h4>
@@ -234,7 +234,7 @@
                     </div>
                     <div class="item">
                         <div class="card border-0 shadow">
-                            <img src="images/eucalipto.webp" alt="" class="card-img-top">
+                            <img src="static/img/eucalipto.webp" alt="" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center">
                                     <h4>SILVICULTURA</h4>
@@ -244,7 +244,7 @@
                     </div>
                     <div class="item">
                         <div class="card border-0 shadow">
-                            <img src="images/outro.webp" alt="" class="card-img-top">
+                            <img src="static/img/outro.webp" alt="" class="card-img-top">
                             <div class="card-body">
                                 <div class="card-title text-center">
                                     <h4>OUTROS</h4>
@@ -263,7 +263,7 @@
                 <div class="row justify-content-center">
                     <div class="col-sm-6 col-lg-4">
                         <div class="card text-center clean-card"><img class="card-img-top w-100 d-block"
-                                alt="Logo Stine sementes" src="assets/img/avatars/stine-logo.webp"
+                                alt="Logo Stine sementes" src="static/img/avatars/stine-logo.webp"
                                 style="max-height: 400px;">
                             <div class="card-body info" style="background: rgba(227,227,227,0.79);max-height: 87px;">
                                 <h4 class="card-title"><strong>STINE SEMENTES</strong></h4>
@@ -272,7 +272,7 @@
                     </div>
                     <!--
                     <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" alt="Logo GDM agricultura em evolução" src="assets/img/avatars/gdm-logo.webp" style="max-height: 400px;">
+                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block" alt="Logo GDM agricultura em evolução" src="static/img/avatars/gdm-logo.webp" style="max-height: 400px;">
                             <div class="card-body info" style="background: rgba(227,227,227,0.79);max-height: 87px;">
                                 <h4 class="card-title">&nbsp;<strong>GDM AGRICULTURA&nbsp;EM EVOLUÇÃO</strong></h4>
                             </div>
@@ -288,10 +288,10 @@
             <p>© 2022 CropView</p>
         </div>
     </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script src="assets/js/vanilla-zoom.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <script src="static/js/vanilla-zoom.js"></script>
+    <script src="static/js/theme.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 

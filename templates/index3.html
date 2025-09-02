@@ -6,22 +6,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>CV - Inicio</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
-    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="static/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="static/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="static/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/Pretty-Table-1.css">
-    <link rel="stylesheet" href="assets/css/Pretty-Table.css">
-    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
-    <link rel="icon" type="image/x-icon" href="assets/img/cv2.webp" />
+    <link rel="stylesheet" href="static/css/Pretty-Table-1.css">
+    <link rel="stylesheet" href="static/css/Pretty-Table.css">
+    <link rel="stylesheet" href="static/css/vanilla-zoom.min.css">
+    <link rel="icon" type="image/x-icon" href="static/img/cv2.webp" />
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Tecnología de análisis y detección de plantas CropView" />
     <meta property="og:description"
         content="Servicio que realiza el conteo automático de plantas, a través de una inteligencia artificial entrenada para detectarlas en imágenes aéreas." />
-    <meta property="og:image" content="assets/img/scenery/cropview-contagem-de-plantas.webp" />
+    <meta property="og:image" content="static/img/scenery/cropview-contagem-de-plantas.webp" />
     <meta property="og:image:width" content="256" />
     <meta property="og:image:height" content="256" />
 	
@@ -49,7 +49,7 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" style="background: linear-gradient(90deg, #2E8B57 0%, #284747 100%), #ffffff;padding-top: 0px;padding-bottom: 0px;">
-        <div class="container"><a href="inicio" style="padding-top: 1%;"><img src="assets/img/cv3.webp" style="height: 70px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">navegación de palanca</font></font></span><span class="navbar-toggler-icon" style="margin-bottom: 0px;padding-bottom: 0px;"></span></button>
+        <div class="container"><a href="inicio" style="padding-top: 1%;"><img src="static/img/cv3.webp" style="height: 70px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">navegación de palanca</font></font></span><span class="navbar-toggler-icon" style="margin-bottom: 0px;padding-bottom: 0px;"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto align-items-xl-center">
                     <li class="nav-item"><a class="nav-link active h-100" href="inicio" style="color: rgba(255,255,255,0.9);font-weight: bold;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">inicio</font></font></a></li>
@@ -57,13 +57,13 @@
                     <li class="nav-item"><a class="nav-link h-100" href="precios" style="color: rgba(255,255,255,0.7);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">precios</font></font></a></li>
                     <li class="nav-item"><a class="nav-link active h-100" href="contacto" style="color: rgba(255,255,255,0.7);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacto</font></font></a></li>
                     <li class="nav-item">
-                        <form method="get" id="languageForm" name="languageForm">
-                            <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link active" href="#" style="color: rgba(255,255,255,0.7);"><span style="padding: 5px;padding-left: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LANGUAGE:&nbsp;</font></font></span><img src="assets/img/espanha.webp" style="width: 32px;"></a>
+                        <form method="post" id="languageForm" name="languageForm" action="{{ url_for('set_language') }}">
+                            <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link active" href="#" style="color: rgba(255,255,255,0.7);"><span style="padding: 5px;padding-left: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LANGUAGE:&nbsp;</font></font></span><img src="static/img/espanha.webp" style="width: 32px;"></a>
                                 <div class="dropdown-menu" style="margin-bottom: 20px;">
                                     <input class="form-control" type="hidden" id="language" name="language">
-                                    <div class="dropdown-item" onclick="setLanguage( 'pt');"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Português Brasil</font></font></span><img src="assets/img/brasil.webp" style="width: 32px;margin-left: 8px;"></div>
-                                    <div class="dropdown-item" onclick="setLanguage( 'en');"><span style="margin-right: 73px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">English</font></font></span><img src="assets/img/estados-unidos.webp" style="width: 32px;margin-left: 8px;"></div>
-                                    <div class="dropdown-item" onclick="setLanguage( 'es');"><span style="margin-right: 73px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Español</font></font></span><img src="assets/img/espanha.webp" style="width: 32px;margin-left: 4px;"></div>
+                                    <div class="dropdown-item" onclick="setLanguage( 'pt');"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Português Brasil</font></font></span><img src="static/img/brasil.webp" style="width: 32px;margin-left: 8px;"></div>
+                                    <div class="dropdown-item" onclick="setLanguage( 'en');"><span style="margin-right: 73px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">English</font></font></span><img src="static/img/estados-unidos.webp" style="width: 32px;margin-left: 8px;"></div>
+                                    <div class="dropdown-item" onclick="setLanguage( 'es');"><span style="margin-right: 73px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Español</font></font></span><img src="static/img/espanha.webp" style="width: 32px;margin-left: 4px;"></div>
                                 </div>
                             </div>
                         </form>
@@ -73,7 +73,7 @@
         </div>
     </nav>
     <main class="page landing-page">
-        <section class="clean-block clean-hero" style="color: rgba(24,57,43,0.77);border-color: rgba(9, 162, 255, 0.85);border-top-color: rgba(9,;border-right-color: 162,;border-bottom-color: 255,;border-left-color: 0.85);opacity: 1;background: url(&quot;assets/img/cropview-campo.webp&quot;) center / cover;min-height: 490px;">
+        <section class="clean-block clean-hero" style="color: rgba(24,57,43,0.77);border-color: rgba(9, 162, 255, 0.85);border-top-color: rgba(9,;border-right-color: 162,;border-bottom-color: 255,;border-left-color: 0.85);opacity: 1;background: url(&quot;static/img/cropview-campo.webp&quot;) center / cover;min-height: 490px;">
             <div class="justify-content-end align-items-center text" style="width: 850px;max-width: 850px;">
                 <h2 style="font-size: 49px;min-width: 0px;transform: scale(1);"><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La tecnología de detección y análisis para facilitar su trabajo</font></font><br></h2>
                 <p class="d-flex align-items-end"><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CropView es un servicio que realiza el conteo automático de plantas a través de una inteligencia artificial entrenada para detectarlas en imágenes aéreas.</font></font><br><br></p>
@@ -89,7 +89,7 @@
                         <div class="clean-pricing-item">
                             <div class="heading" style="padding-bottom: 0px;border-bottom-style: none;">
                                 <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aplicación completa</font></font></h3>
-                                <div class="card" style="border-style: none;"><video autoplay loop muted> <source class="card-img-top w-100 d-block"  src="assets/img/cropview-complete-application.webm"></video></div>
+                                <div class="card" style="border-style: none;"><video autoplay loop muted> <source class="card-img-top w-100 d-block"  src="static/img/cropview-complete-application.webm"></video></div>
                             </div>
                             <p style="color: var(--bs-gray-900);text-align: center;font-size: 11px;margin: 0px;margin-top: 10px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">* Representación real del análisis</font></font></p>
                             <p style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;"><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Análisis mediante un mapa digital (Ortomosaico), construido </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">al unir varias fotos en una sola. </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este análisis tiene los valores más cercanos a la realidad, </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">recomendado para áreas de investigación que necesitan información más precisa en áreas más pequeñas.</font></font><br><br></p>
@@ -100,7 +100,7 @@
                         <div class="clean-pricing-item">
                             <div class="heading" style="padding-bottom: 0px;border-bottom-style: none;">
                                 <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aplicación estadística</font></font><br></h3>
-                                <div class="card" style="border-style: none;"><video autoplay loop muted> <source class="card-img-top w-100 d-block"  src="assets/img/cropview-statistical-application.webm"></video></div>
+                                <div class="card" style="border-style: none;"><video autoplay loop muted> <source class="card-img-top w-100 d-block"  src="static/img/cropview-statistical-application.webm"></video></div>
                             </div>
                             <p style="color: var(--bs-gray-900);text-align: center;font-size: 11px;margin: 0px;margin-top: 10px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">* Simulación de análisis</font></font></p>
                             <p style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;"><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Análisis foto a foto, donde cada foto representa un porcentaje del área de producción. </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Los valores de conteo se extrapolan para obtener una estimación del área total, lo que posibilita la aplicación en grandes áreas, donde la construcción de Ortomosaicos de alta resolución es inviable.</font></font><br><br></p>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col">
-                        <div class="card" style="background: transparent;border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;"><img class="card-img-top w-100 d-block d-grid" src="assets/img/sistema-cropview2.webp"></div>
+                        <div class="card" style="background: transparent;border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;"><img class="card-img-top w-100 d-block d-grid" src="static/img/sistema-cropview2.webp"></div>
                     </div>
                 </div>
             </div>
@@ -154,7 +154,7 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block"  src="assets/img/avatars/stine-logo.webp" style="max-height: 400px;">
+                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block"  src="static/img/avatars/stine-logo.webp" style="max-height: 400px;">
                             <div class="card-body info" style="background: rgba(227,227,227,0.79);max-height: 87px;">
                                 <h4 class="card-title"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">STINE SEMILLAS</font></font></strong></h4>
                             </div>
@@ -162,7 +162,7 @@
                     </div>
                     <!--
                     <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block"  src="assets/img/avatars/gdm-logo.webp" style="max-height: 400px;">
+                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block"  src="static/img/avatars/gdm-logo.webp" style="max-height: 400px;">
                             <div class="card-body info" style="background: rgba(227,227,227,0.79);max-height: 87px;">
                                 <h4 class="card-title"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&nbsp; </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GDM AGRICULTURA EN EVOLUCIÓN</font></font></strong></h4>
                             </div>
@@ -178,10 +178,10 @@
             <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2022 CropView</font></font></p>
         </div>
     </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="static/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script src="assets/js/vanilla-zoom.js"></script>
-    <script src="assets/js/theme.js"></script>
+    <script src="static/js/vanilla-zoom.js"></script>
+    <script src="static/js/theme.js"></script>
 </body>
 
 </html>
