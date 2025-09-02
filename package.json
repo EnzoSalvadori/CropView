@@ -1,0 +1,11 @@
+{
+  "name": "site-cropview",
+  "version": "1.0.0",
+  "description": "site demonstração cropview",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Enzo Salvadori",
+  "license": "ISC"
+}
