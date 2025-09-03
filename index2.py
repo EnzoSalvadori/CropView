@@ -31,7 +31,7 @@ def requisitos():
 		return render_template("requirements1.html")
 
 @app.route("/precios")
-@app.route("/preços")
+@app.route("/precos")
 @app.route("/pricing")
 def preços():
 	try:
