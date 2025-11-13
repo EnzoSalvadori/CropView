@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!-- saved from url=(0044)inicio?language=es -->
 <html>
-    
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -12,10 +12,20 @@
     <link rel="stylesheet" href="static/fonts/material-icons.min.css">
     <link rel="stylesheet" href="static/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="static/css/mystyle.css">
     <link rel="stylesheet" href="static/css/Pretty-Table-1.css">
     <link rel="stylesheet" href="static/css/Pretty-Table.css">
     <link rel="stylesheet" href="static/css/vanilla-zoom.min.css">
     <link rel="icon" type="image/x-icon" href="static/img/cv2.webp" />
+
 
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Tecnología de análisis y detección de plantas CropView" />
@@ -24,22 +34,21 @@
     <meta property="og:image" content="static/img/scenery/cropview-contagem-de-plantas.webp" />
     <meta property="og:image:width" content="256" />
     <meta property="og:image:height" content="256" />
-	
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232923384-1">
-	</script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
 
-	  gtag('config', 'UA-232923384-1');
-	</script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232923384-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-232923384-1');
+    </script>
 
     <script>
-        function setLanguage(numero)
-        {
+        function setLanguage(numero) {
             document.getElementById('language').value = numero;
             document.getElementById('languageForm').submit();
         }
@@ -48,22 +57,75 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" style="background: linear-gradient(90deg, #2E8B57 0%, #284747 100%), #ffffff;padding-top: 0px;padding-bottom: 0px;">
-        <div class="container"><a href="inicio" style="padding-top: 1%;"><img src="static/img/cv3.webp" style="height: 70px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">navegación de palanca</font></font></span><span class="navbar-toggler-icon" style="margin-bottom: 0px;padding-bottom: 0px;"></span></button>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar"
+        style="background: linear-gradient(90deg, #2E8B57 0%, #284747 100%), #ffffff;padding-top: 0px;padding-bottom: 0px;">
+        <div class="container"><a href="inicio" style="padding-top: 1%;"><img src="static/img/cv3.webp"
+                    style="height: 70px;"></a><button data-bs-toggle="collapse" class="navbar-toggler"
+                data-bs-target="#navcol-1"
+                style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span
+                    class="visually-hidden">
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">navegación de palanca</font>
+                    </font>
+                </span><span class="navbar-toggler-icon"
+                    style="margin-bottom: 0px;padding-bottom: 0px;"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto align-items-xl-center">
-                    <li class="nav-item"><a class="nav-link active h-100" href="inicio" style="color: rgba(255,255,255,0.9);font-weight: bold;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">inicio</font></font></a></li>
-                    <li class="nav-item"><a class="nav-link h-100" href="requisitos" style="color: rgba(255,255,255,0.7);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">requisitos</font></font></a></li>
-                    <li class="nav-item"><a class="nav-link h-100" href="precios" style="color: rgba(255,255,255,0.7);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">precios</font></font></a></li>
-                    <li class="nav-item"><a class="nav-link active h-100" href="contacto" style="color: rgba(255,255,255,0.7);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacto</font></font></a></li>
+                    <li class="nav-item"><a class="nav-link active h-100" href="inicio"
+                            style="color: rgba(255,255,255,0.9);font-weight: bold;">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">inicio</font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link h-100" href="requisitos"
+                            style="color: rgba(255,255,255,0.7);">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">requisitos</font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link h-100" href="precios" style="color: rgba(255,255,255,0.7);">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">precios</font>
+                            </font>
+                        </a></li>
+                    <li class="nav-item"><a class="nav-link active h-100" href="contacto"
+                            style="color: rgba(255,255,255,0.7);">
+                            <font style="vertical-align: inherit;">
+                                <font style="vertical-align: inherit;">Contacto</font>
+                            </font>
+                        </a></li>
                     <li class="nav-item">
-                        <form method="post" id="languageForm" name="languageForm" action="{{ url_for('set_language') }}">
-                            <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link active" href="#" style="color: rgba(255,255,255,0.7);"><span style="padding: 5px;padding-left: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LANGUAGE:&nbsp;</font></font></span><img src="static/img/espanha.webp" style="width: 32px;"></a>
+                        <form method="post" id="languageForm" name="languageForm"
+                            action="{{ url_for('set_language') }}">
+                            <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown"
+                                    class="nav-link active" href="#" style="color: rgba(255,255,255,0.7);"><span
+                                        style="padding: 5px;padding-left: 0px;">
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">LANGUAGE:&nbsp;</font>
+                                        </font>
+                                    </span><img src="static/img/espanha.webp" style="width: 32px;"></a>
                                 <div class="dropdown-menu" style="margin-bottom: 20px;">
                                     <input class="form-control" type="hidden" id="language" name="language">
-                                    <div class="dropdown-item" onclick="setLanguage( 'pt');"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Português Brasil</font></font></span><img src="static/img/brasil.webp" style="width: 32px;margin-left: 8px;"></div>
-                                    <div class="dropdown-item" onclick="setLanguage( 'en');"><span style="margin-right: 73px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">English</font></font></span><img src="static/img/estados-unidos.webp" style="width: 32px;margin-left: 8px;"></div>
-                                    <div class="dropdown-item" onclick="setLanguage( 'es');"><span style="margin-right: 73px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Español</font></font></span><img src="static/img/espanha.webp" style="width: 32px;margin-left: 4px;"></div>
+                                    <div class="dropdown-item" onclick="setLanguage( 'pt');"><span>
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Português Brasil</font>
+                                            </font>
+                                        </span><img src="static/img/brasil.webp" style="width: 32px;margin-left: 8px;">
+                                    </div>
+                                    <div class="dropdown-item" onclick="setLanguage( 'en');"><span
+                                            style="margin-right: 73px;">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">English</font>
+                                            </font>
+                                        </span><img src="static/img/estados-unidos.webp"
+                                            style="width: 32px;margin-left: 8px;"></div>
+                                    <div class="dropdown-item" onclick="setLanguage( 'es');"><span
+                                            style="margin-right: 73px;">
+                                            <font style="vertical-align: inherit;">
+                                                <font style="vertical-align: inherit;">Español</font>
+                                            </font>
+                                        </span><img src="static/img/espanha.webp" style="width: 32px;margin-left: 4px;">
+                                    </div>
                                 </div>
                             </div>
                         </form>
@@ -73,38 +135,118 @@
         </div>
     </nav>
     <main class="page landing-page">
-        <section class="clean-block clean-hero" style="color: rgba(24,57,43,0.77);border-color: rgba(9, 162, 255, 0.85);border-top-color: rgba(9,;border-right-color: 162,;border-bottom-color: 255,;border-left-color: 0.85);opacity: 1;background: url(&quot;static/img/cropview-campo.webp&quot;) center / cover;min-height: 490px;">
+        <section class="clean-block clean-hero"
+            style="color: rgba(24,57,43,0.77);border-color: rgba(9, 162, 255, 0.85);border-top-color: rgba(9,;border-right-color: 162,;border-bottom-color: 255,;border-left-color: 0.85);opacity: 1;background: url(&quot;static/img/cropview-campo.webp&quot;) center / cover;min-height: 490px;">
             <div class="justify-content-end align-items-center text" style="width: 850px;max-width: 850px;">
-                <h2 style="font-size: 49px;min-width: 0px;transform: scale(1);"><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La tecnología de detección y análisis para facilitar su trabajo</font></font><br></h2>
-                <p class="d-flex align-items-end"><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CropView es un servicio que realiza el conteo automático de plantas a través de una inteligencia artificial entrenada para detectarlas en imágenes aéreas.</font></font><br><br></p>
+                <h2 style="font-size: 49px;min-width: 0px;transform: scale(1);"><br>
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">La tecnología de detección y análisis para facilitar su
+                            trabajo</font>
+                    </font><br>
+                </h2>
+                <p class="d-flex align-items-end"><br>
+                    <font style="vertical-align: inherit;">
+                        <font style="vertical-align: inherit;">CropView es un servicio que realiza el conteo automático
+                            de plantas a través de una inteligencia artificial entrenada para detectarlas en imágenes
+                            aéreas.</font>
+                    </font><br><br>
+                </p>
             </div>
         </section>
         <section class="clean-block clean-info dark" style="background: transparent;padding-bottom: 80px;">
             <div class="container" style="max-width: 1500px;">
                 <div class="block-heading" style="padding-top: 45px;">
-                    <h2 class="text-info"><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aplicación en áreas de investigación y producción.</font></font><br><br></h2>
+                    <h2 class="text-info"><br>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Aplicación en áreas de investigación y producción.
+                            </font>
+                        </font><br><br>
+                    </h2>
                 </div>
                 <div class="row">
                     <div class="col-md-5 col-lg-6">
                         <div class="clean-pricing-item">
                             <div class="heading" style="padding-bottom: 0px;border-bottom-style: none;">
-                                <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aplicación completa</font></font></h3>
-                                <div class="card" style="border-style: none;"><video autoplay loop muted> <source class="card-img-top w-100 d-block"  src="static/img/cropview-complete-application.webm"></video></div>
+                                <h3>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Aplicación completa</font>
+                                    </font>
+                                </h3>
+                                <div class="card" style="border-style: none;"><video autoplay loop muted>
+                                        <source class="card-img-top w-100 d-block"
+                                            src="static/img/cropview-complete-application.webm">
+                                    </video></div>
                             </div>
-                            <p style="color: var(--bs-gray-900);text-align: center;font-size: 11px;margin: 0px;margin-top: 10px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">* Representación real del análisis</font></font></p>
-                            <p style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;"><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Análisis mediante un mapa digital (Ortomosaico), construido </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">al unir varias fotos en una sola. </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Este análisis tiene los valores más cercanos a la realidad, </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">recomendado para áreas de investigación que necesitan información más precisa en áreas más pequeñas.</font></font><br><br></p>
-                            <form><a class="btn btn-primary d-block w-100" role="button" href="precios"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SEPA MAS</font></font></a></form>
+                            <p
+                                style="color: var(--bs-gray-900);text-align: center;font-size: 11px;margin: 0px;margin-top: 10px;">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">* Representación real del análisis</font>
+                                </font>
+                            </p>
+                            <p
+                                style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;">
+                                <br>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Análisis mediante un mapa digital
+                                        (Ortomosaico), construido </font>
+                                </font><br>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">al unir varias fotos en una sola. </font>
+                                </font><br><br>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Este análisis tiene los valores más cercanos
+                                        a la realidad, </font>
+                                </font><br>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">recomendado para áreas de investigación que
+                                        necesitan información más precisa en áreas más pequeñas.</font>
+                                </font><br><br>
+                            </p>
+                            <form><a class="btn btn-primary d-block w-100" role="button" href="precios">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">SEPA MAS</font>
+                                    </font>
+                                </a></form>
                         </div>
                     </div>
                     <div class="col-md-5 col-lg-6">
                         <div class="clean-pricing-item">
                             <div class="heading" style="padding-bottom: 0px;border-bottom-style: none;">
-                                <h3><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Aplicación estadística</font></font><br></h3>
-                                <div class="card" style="border-style: none;"><video autoplay loop muted> <source class="card-img-top w-100 d-block"  src="static/img/cropview-statistical-application.webm"></video></div>
+                                <h3>
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">Aplicación estadística</font>
+                                    </font><br>
+                                </h3>
+                                <div class="card" style="border-style: none;"><video autoplay loop muted>
+                                        <source class="card-img-top w-100 d-block"
+                                            src="static/img/cropview-statistical-application.webm">
+                                    </video></div>
                             </div>
-                            <p style="color: var(--bs-gray-900);text-align: center;font-size: 11px;margin: 0px;margin-top: 10px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">* Simulación de análisis</font></font></p>
-                            <p style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;"><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Análisis foto a foto, donde cada foto representa un porcentaje del área de producción. </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Los valores de conteo se extrapolan para obtener una estimación del área total, lo que posibilita la aplicación en grandes áreas, donde la construcción de Ortomosaicos de alta resolución es inviable.</font></font><br><br></p>
-                            <form><a class="btn btn-primary d-block w-100" role="button" href="precios"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SEPA MAS</font></font></a></form>
+                            <p
+                                style="color: var(--bs-gray-900);text-align: center;font-size: 11px;margin: 0px;margin-top: 10px;">
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">* Simulación de análisis</font>
+                                </font>
+                            </p>
+                            <p
+                                style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;">
+                                <br>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Análisis foto a foto, donde cada foto
+                                        representa un porcentaje del área de producción. </font>
+                                </font><br><br>
+                                <font style="vertical-align: inherit;">
+                                    <font style="vertical-align: inherit;">Los valores de conteo se extrapolan para
+                                        obtener una estimación del área total, lo que posibilita la aplicación en
+                                        grandes áreas, donde la construcción de Ortomosaicos de alta resolución es
+                                        inviable.</font>
+                                </font><br><br>
+                            </p>
+                            <form><a class="btn btn-primary d-block w-100" role="button" href="precios">
+                                    <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">SEPA MAS</font>
+                                    </font>
+                                </a></form>
                         </div>
                     </div>
                 </div>
@@ -113,11 +255,18 @@
         <section class="clean-block clean-info dark" style="padding-bottom: 0px;">
             <div class="container">
                 <div class="block-heading" style="padding-top: 45px;">
-                    <h2 class="text-info"><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IA de precisión especial para tus cultivos</font></font><br><br></h2>
+                    <h2 class="text-info"><br>
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">IA de precisión especial para tus cultivos</font>
+                        </font><br><br>
+                    </h2>
                 </div>
                 <div class="row align-items-center">
                     <div class="col">
-                        <div class="card" style="background: transparent;border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;"><img class="card-img-top w-100 d-block d-grid" src="static/img/sistema-cropview2.webp"></div>
+                        <div class="card"
+                            style="background: transparent;border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;">
+                            <img class="card-img-top w-100 d-block d-grid" src="static/img/sistema-cropview2.webp">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -125,24 +274,78 @@
         <section class="clean-block features" style="padding-bottom: 40px;">
             <div class="container">
                 <div class="block-heading" style="padding-top: 60px;">
-                    <h2 class="text-info"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Recursos</font></font></h2>
+                    <h2 class="text-info">Recursos</h2>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-5 feature-box"><i class="material-icons icon">gps_fixed</i>
-                        <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">recuento de plantas</font></font></h4>
-                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Los recuentos precisos de plantas son fundamentales para estimar los rendimientos de semillas en toda la población.</font></font><br><br></p>
+                <div class="row justify-content-center"
+                    style="border-bottom-width: 1px;border-bottom-style: solid; margin-bottom: 50px; padding-bottom: 30px;">
+                    <div class="col-md-5 feature-box"><i class="material-icons icon">radio_button_unchecked</i>
+                        <h4 style="font-size: 23px;">Conteo de plantas</h4>
+                        <p>Conteo preciso de plantas, <b>fundamental para estimar la productividad</b> a través de la
+                            población.<br><br></p>
                     </div>
                     <div class="col-md-5 feature-box"><i class="icon-graph icon"></i>
-                        <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Detección y medición de fallas</font></font></h4>
-                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Las fallas demuestran áreas perdidas en el cultivo, estimando sus tamaños obtenemos la información inversa de la cuenta.</font></font></p>
+                        <h4 style="font-size: 23px;">Detección de fallas</h4>
+                        <p>Fallas que muestran <b>áreas perdidas en el cultivo</b>; al estimar sus tamaños obtenemos la
+                            información
+                            inversa del conteo.</p>
                     </div>
-                    <div class="col-md-5 feature-box"><i class="icon-check icon"></i>
-                        <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alta precisión&nbsp;</font></font></h4>
-                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nuestra precisión de conteo garantiza más del 95% de validación.</font></font><br><br></p>
+                    <br>
+                    <div class="col-md-5 feature-box"><i class="material-icons icon">gps_fixed</i>
+                        <h4 style="font-size: 23px;">Coordenadas GPS</h4>
+                        <p>Generación de informes con coordenadas geográficas en formato <b>shapefile</b>, para
+                            visualizar en la
+                            aplicación <b>QGIS</b>.</p>
                     </div>
-                    <div class="col-md-5 feature-box"><i class="icon-layers icon"></i>
-                        <h4><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Automatización&nbsp;</font></font></h4>
-                        <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Todo el proceso de detección lo realiza nuestro sistema automáticamente, solo necesita enviar sus imágenes.</font></font></p>
+                    <div class="col-md-5 feature-box"><i class="icon-control-play icon"></i>
+                        <h4 style="font-size: 23px;">Velocidad y Precisión</h4>
+                        <p>Proceso totalmente automatizado por nuestro sistema,<br> <b>70 veces más rápido</b> que un
+                            conteo manual,
+                            garantizando una validación <b>superior al 95%.</b></p>
+                    </div>
+                </div>
+                <div class="block-heading" style="padding-top: 30px;">
+                    <h2>Cultivos con aplicación</h2>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="static/img/milho.webp" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>MAÍZ</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="static/img/soja.webp" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>SOJA</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="static/img/eucalipto.webp" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>SILVICULTURA</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="static/img/outro.webp" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>OTROS</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -150,13 +353,22 @@
         <section class="clean-block about-us" style="background: rgb(246, 246, 246);padding-bottom: 80px;">
             <div class="container">
                 <div class="block-heading">
-                    <h2 class="text-info"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Empresas que confían en nuestro trabajo</font></font></h2>
+                    <h2 class="text-info">
+                        <font style="vertical-align: inherit;">
+                            <font style="vertical-align: inherit;">Empresas que confían en nuestro trabajo</font>
+                        </font>
+                    </h2>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block"  src="static/img/avatars/stine-logo.webp" style="max-height: 400px;">
+                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block"
+                                src="static/img/avatars/stine-logo.webp" style="max-height: 400px;">
                             <div class="card-body info" style="background: rgba(227,227,227,0.79);max-height: 87px;">
-                                <h4 class="card-title"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">STINE SEMILLAS</font></font></strong></h4>
+                                <h4 class="card-title"><strong>
+                                        <font style="vertical-align: inherit;">
+                                            <font style="vertical-align: inherit;">STINE SEMILLAS</font>
+                                        </font>
+                                    </strong></h4>
                             </div>
                         </div>
                     </div>
@@ -175,13 +387,44 @@
     </main>
     <footer class="page-footer dark" style="margin-top: auto;padding: 0;">
         <div class="footer-copyright" style="margin-top: auto;">
-            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">© 2022 CropView</font></font></p>
+            <p>
+                <font style="vertical-align: inherit;">
+                    <font style="vertical-align: inherit;">© 2022 CropView</font>
+                </font>
+            </p>
         </div>
     </footer>
     <script src="static/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="static/js/vanilla-zoom.js"></script>
     <script src="static/js/theme.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+
+    </script>
 </body>
 
 </html>

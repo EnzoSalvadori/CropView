@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="static/fonts/material-icons.min.css">
     <link rel="stylesheet" href="static/fonts/simple-line-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="static/css/mystyle.css">
     <link rel="stylesheet" href="static/css/Pretty-Table-1.css">
     <link rel="stylesheet" href="static/css/Pretty-Table.css">
     <link rel="stylesheet" href="static/css/vanilla-zoom.min.css">
@@ -24,20 +33,19 @@
     <meta property="og:image:width" content="256" />
     <meta property="og:image:height" content="256" />
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-232923384-1">
-	</script>
-	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-232923384-1">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-	  gtag('config', 'UA-232923384-1');
-	</script>
+        gtag('config', 'UA-232923384-1');
+    </script>
 
     <script>
-        function setLanguage(number)
-        {
+        function setLanguage(number) {
             document.getElementById('language').value = number;
             document.getElementById('languageForm').submit();
         }
@@ -45,22 +53,43 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" style="background: linear-gradient(90deg, #2E8B57 0%, #284747 100%), #ffffff;padding-top: 0px;padding-bottom: 0px;">
-        <div class="container"><a href="home" style="padding-top: 1%;"><img src="static/img/cv3.webp" style="height: 70px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon" style="margin-bottom : 0px;padding-bottom: 0px;"></span></button>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar"
+        style="background: linear-gradient(90deg, #2E8B57 0%, #284747 100%), #ffffff;padding-top: 0px;padding-bottom: 0px;">
+        <div class="container"><a href="home" style="padding-top: 1%;"><img src="static/img/cv3.webp"
+                    style="height: 70px;"></a><button data-bs-toggle="collapse" class="navbar-toggler"
+                data-bs-target="#navcol-1"
+                style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span
+                    class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"
+                    style="margin-bottom : 0px;padding-bottom: 0px;"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto align-items-xl-center">
-                    <li class="nav-item"><a class="nav-link active h-100" href="home" style="color: rgba(255,255,255,0.9); font-weight:bold;">Home</a></li>
-                    <li class="nav-item"><a class="nav-link h-100" href="requirements" style="color: rgba(255,255,255,0.7);">Requirements</a></li>
-                    <li class="nav-item"><a class="nav-link h-100" href="pricing" style="color: rgba(255,255,255,0.7);">pricing</a></li>
-                    <li class="nav-item"><a class="nav-link active h-100" href="contact" style="color: rgba(255,255,255,0.7);">Contact</a></li >
+                    <li class="nav-item"><a class="nav-link active h-100" href="home"
+                            style="color: rgba(255,255,255,0.9); font-weight:bold;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link h-100" href="requirements"
+                            style="color: rgba(255,255,255,0.7);">Requirements</a></li>
+                    <li class="nav-item"><a class="nav-link h-100" href="pricing"
+                            style="color: rgba(255,255,255,0.7);">pricing</a></li>
+                    <li class="nav-item"><a class="nav-link active h-100" href="contact"
+                            style="color: rgba(255,255,255,0.7);">Contact</a></li>
                     <li class="nav-item">
-                        <form method="post" id="languageForm" name="languageForm" action="{{ url_for('set_language') }}">
-                            <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link active" href="#" style="color: rgba(255,255,255 ,0.7);"><span style="padding: 5px;padding-left: 0px;">Language:&nbsp;</span><img src="static/img/estados-unidos.webp" style="width : 32px;"></a>
+                        <form method="post" id="languageForm" name="languageForm"
+                            action="{{ url_for('set_language') }}">
+                            <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown"
+                                    class="nav-link active" href="#" style="color: rgba(255,255,255 ,0.7);"><span
+                                        style="padding: 5px;padding-left: 0px;">Language:&nbsp;</span><img
+                                        src="static/img/estados-unidos.webp" style="width : 32px;"></a>
                                 <div class="dropdown-menu" style="margin-bottom: 20px;">
                                     <input class="form-control" type="hidden" id="language" name="language">
-                                    <div class="dropdown-item" onclick="setLanguage('pt');"><span>Português Brasil</span><img src="static/img/brasil.webp" style="width: 32px; margin-left: 8px;"></div>
-                                    <div class="dropdown-item" onclick="setLanguage('en');"><span style="margin-right: 73px;">English</span><img src="static/img/estados-unidos.webp" style="width: 32px;margin-left: 8px;"></div>
-                                    <div class="dropdown-item" onclick="setLanguage('es');"><span style="margin-right: 73px;">Español</span><img src="static/img/espanha.webp" style="width: 32px;margin-left: 4px;"></div>
+                                    <div class="dropdown-item" onclick="setLanguage('pt');"><span>Português
+                                            Brasil</span><img src="static/img/brasil.webp"
+                                            style="width: 32px; margin-left: 8px;"></div>
+                                    <div class="dropdown-item" onclick="setLanguage('en');"><span
+                                            style="margin-right: 73px;">English</span><img
+                                            src="static/img/estados-unidos.webp" style="width: 32px;margin-left: 8px;">
+                                    </div>
+                                    <div class="dropdown-item" onclick="setLanguage('es');"><span
+                                            style="margin-right: 73px;">Español</span><img src="static/img/espanha.webp"
+                                            style="width: 32px;margin-left: 4px;"></div>
                                 </div>
                             </div>
                         </form>
@@ -70,10 +99,13 @@
         </div>
     </nav>
     <main class="landing page">
-        <section class="clean-block clean-hero" style="color: rgba(24,57,43,0.77);border-color: rgba(9, 162, 255, 0.85);border-top-color: rgba(9,;border-right-color: 162,;border-bottom-color: 255,;border-left-color: 0.85);opacity: 1;background: url(&quot;static/img/cropview-campo.webp&quot;) center / cover;min-height: 490px;">
+        <section class="clean-block clean-hero"
+            style="color: rgba(24,57,43,0.77);border-color: rgba(9, 162, 255, 0.85);border-top-color: rgba(9,;border-right-color: 162,;border-bottom-color: 255,;border-left-color: 0.85);opacity: 1;background: url(&quot;static/img/cropview-campo.webp&quot;) center / cover;min-height: 490px;">
             <div class="justify-content-end align-items-center text" style="width: 850px;max-width: 850px;">
-                <h2 style="font-size: 49px;min-width: 0px;transform: scale(1);"><br>The detection and analysis technology to make your work easier<br></h2>
-                <p class="d-flex align-items-end"><br>CropView is a Service that performs the automatic counting of plants through an artificial intelligence trained to detect them in aerial images.<br><br><br> </p>
+                <h2 style="font-size: 49px;min-width: 0px;transform: scale(1);"><br>The detection and analysis
+                    technology to make your work easier<br></h2>
+                <p class="d-flex align-items-end"><br>CropView is a Service that performs the automatic counting of
+                    plants through an artificial intelligence trained to detect them in aerial images.<br><br><br> </p>
             </div>
         </section>
         <section class="clean-block clean-info dark" style="background: transparent;padding-bottom: 80px;">
@@ -86,22 +118,43 @@
                         <div class="clean-pricing-item">
                             <div class="heading" style="padding-bottom: 0px;border-bottom-style: none;">
                                 <h3>Complete application</h3>
-                                <div class="card" style="border-style: none;"><video autoplay loop muted> <source class="card-img-top w-100 d-block"  src="static/img/cropview-complete-application.webm"></video></div>
+                                <div class="card" style="border-style: none;"><video autoplay loop muted>
+                                        <source class="card-img-top w-100 d-block"
+                                            src="static/img/cropview-complete-application.webm">
+                                    </video></div>
                             </div>
-                            <p style="color: var(--bs-gray-900);text-align: center;font-size: 11px;margin: 0px;margin-top: 10px;">* Actual representation of the analysis</p >
-                            <p style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;"><br >Analysis by a digital map (Orthomosaic), constructed<br>by joining several photos into one. <br><br>This analysis has the closest values ​​to reality,<br> recommended for research areas that need more accurate information in smaller areas.<br><br></p>
-                            <form><a class="btn btn-primary d-block w-100" role="button" href="pricing">LEARN MORE</a></form>
+                            <p
+                                style="color: var(--bs-gray-900);text-align: center;font-size: 11px;margin: 0px;margin-top: 10px;">
+                                * Actual representation of the analysis</p>
+                            <p
+                                style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;">
+                                <br>Analysis by a digital map (Orthomosaic), constructed<br>by joining several photos
+                                into one. <br><br>This analysis has the closest values ​​to reality,<br> recommended for
+                                research areas that need more accurate information in smaller areas.<br><br></p>
+                            <form><a class="btn btn-primary d-block w-100" role="button" href="pricing">LEARN MORE</a>
+                            </form>
                         </div>
                     </div>
                     <div class="col-md-5 col-lg-6">
                         <div class="clean-pricing-item">
                             <div class="heading" style="padding-bottom: 0px;border-bottom-style: none;">
                                 <h3>Statistical application<br></h3>
-                                <div class="card" style="border-style: none;"><video autoplay loop muted> <source class="card-img-top w-100 d-block"  src="static/img/cropview-statistical-application.webm"></video></div>
+                                <div class="card" style="border-style: none;"><video autoplay loop muted>
+                                        <source class="card-img-top w-100 d-block"
+                                            src="static/img/cropview-statistical-application.webm">
+                                    </video></div>
                             </div>
-                            <p style="color: var(--bs-gray-900);text-align: center;font-size: 11px;margin: 0px;margin-top: 10px;">* Analysis simulation</p>
-                            <p style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;"><br >Photo by photo analysis, where each photo represents a percentage of the production area.<br><br> The count values ​​are extrapolated to obtain an estimate of the total area, which makes possible the application in areas of great extensions, where to build a high resolution orthomosaics is unfeasible.<br><br></p>
-                            <form><a class="btn btn-primary d-block w-100" role="button" href="pricing">LEARN MORE</a></form>
+                            <p
+                                style="color: var(--bs-gray-900);text-align: center;font-size: 11px;margin: 0px;margin-top: 10px;">
+                                * Analysis simulation</p>
+                            <p
+                                style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;">
+                                <br>Photo by photo analysis, where each photo represents a percentage of the production
+                                area.<br><br> The count values ​​are extrapolated to obtain an estimate of the total
+                                area, which makes possible the application in areas of great extensions, where to build
+                                a high resolution orthomosaics is unfeasible.<br><br></p>
+                            <form><a class="btn btn-primary d-block w-100" role="button" href="pricing">LEARN MORE</a>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -114,7 +167,10 @@
                 </div>
                 <div class="row align-items-center">
                     <div class="col">
-                        <div class="card" style="background: transparent;border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;"><img class="card-img-top w-100 d-block d-grid" src="static/img/sistema-cropview2.webp"></div>
+                        <div class="card"
+                            style="background: transparent;border-top-style: none;border-right-style: none;border-bottom-style: none;border-left-style: none;">
+                            <img class="card-img-top w-100 d-block d-grid" src="static/img/sistema-cropview2.webp">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,24 +178,74 @@
         <section class="clean-block features" style="padding-bottom: 40px;">
             <div class="container">
                 <div class="block-heading" style="padding-top: 60px;">
-                    <h2 class="text-info">Resources</h2>
+                    <h2 class="text-info">Features</h2>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-5 feature-box"><i class="material-icons icon">gps_fixed</i>
-                        <h4>Plant count</h4>
-                        <p>Accurate plant counts are critical to estimating seed productivity across population.<br><br></p>
+                <div class="row justify-content-center"
+                    style="border-bottom-width: 1px;border-bottom-style: solid; margin-bottom: 50px; padding-bottom: 30px;">
+                    <div class="col-md-5 feature-box"><i class="material-icons icon">radio_button_unchecked</i>
+                        <h4 style="font-size: 23px;">Plant Counting</h4>
+                        <p>Accurate plant counting is <b>essential to estimate productivity</b> through population.<br><br></p>
                     </div>
                     <div class="col-md-5 feature-box"><i class="icon-graph icon"></i>
-                        <h4>Fault detection and measurement</h4>
-                        <p>The faults demonstrate areas lost in cultivation, estimating their sizes we obtain the inverse of the count information.</p>
+                        <h4 style="font-size: 23px;">Failure Detection</h4>
+                        <p>Failures that indicate <b>lost areas in cultivation</b>; by estimating their sizes, we obtain the inverse of
+                            the counting information.</p>
                     </div>
-                    <div class="col-md-5 feature-box"><i class="icon-check icon"></i>
-                        <h4>High precision&nbsp;</h4>
-                        <p>Our counting accuracy guarantees over 95% validation.<br><br></p>
+                    <br>
+                    <div class="col-md-5 feature-box"><i class="material-icons icon">gps_fixed</i>
+                        <h4 style="font-size: 23px;">GPS Coordinates</h4>
+                        <p>Generation of reports with geographic coordinates in <b>shapefile</b> format, for visualization in the
+                            <b>QGIS</b> application.</p>
                     </div>
-                    <div class="col-md-5 feature-box"><i class="icon-layers icon"></i>
-                        <h4>Automation&nbsp;</h4>
-                        <p>The entire detection process is done automatically by our system, you just need to send your images.</p>
+                    <div class="col-md-5 feature-box"><i class="icon-control-play icon"></i>
+                        <h4 style="font-size: 23px;">Speed and Accuracy</h4>
+                        <p>Fully automated process by our system,<br> <b>70 times faster</b> than manual counting, ensuring validation
+                            rates of <b>over 95%.</b></p>
+                    </div>
+                </div>                
+                <div class="block-heading" style="padding-top: 30px;">
+                    <h2>Crops with application</h2>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="static/img/milho.webp" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>CORN</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="static/img/soja.webp" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>SOY</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="static/img/eucalipto.webp" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>FORESTRY</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="card border-0 shadow">
+                            <img src="static/img/outro.webp" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <div class="card-title text-center">
+                                    <h4>OTHERS</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -151,7 +257,8 @@
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-sm-6 col-lg-4">
-                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block"  src="static/img/avatars/stine-logo.webp" style= "max height: 400px;">
+                        <div class="card text-center clean-card"><img class="card-img-top w-100 d-block"
+                                src="static/img/avatars/stine-logo.webp" style="max height: 400px;">
                             <div class="card-body info" style="background: rgba(227,227,227,0.79);max-height: 87px;">
                                 <h4 class="card-title"><strong>STINE SEEDS</strong></h4>
                             </div>
@@ -179,6 +286,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
     <script src="static/js/vanilla-zoom.js"></script>
     <script src="static/js/theme.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 15,
+            nav: true,
+            navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 2
+                },
+                1000: {
+                    items: 3
+                }
+            }
+        })
+
+    </script>
 </body>
 
 </html>
