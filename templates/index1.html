@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
@@ -59,7 +59,7 @@
                     alt="Logo CropView" style="height: 70px;"></a><button data-bs-toggle="collapse"
                 class="navbar-toggler" data-bs-target="#navcol-1"
                 style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span
-                    class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"
+                    class="visually-hidden">Alternar navegação</span><span class="navbar-toggler-icon"
                     style="margin-bottom: 0px;padding-bottom: 0px;"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto align-items-xl-center">
@@ -75,7 +75,7 @@
                         <form method="post" id="languageForm" name="languageForm" action="{{ url_for('set_language') }}">
                             <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown"
                                     class="nav-link active" href="#" style="color: rgba(255,255,255,0.7);"><span
-                                        style="padding: 5px;padding-left: 0px;">Language:&nbsp;</span><img
+                                        style="padding: 5px;padding-left: 0px;">Idioma:&nbsp;</span><img
                                         src="static/img/brasil.webp" style="width: 32px;"></a>
                                 <div class="dropdown-menu" style="margin-bottom: 20px;">
                                     <input class="form-control" type="hidden" id="language" name="language">
@@ -126,13 +126,8 @@
                                 style="color: var(--bs-gray-900);text-align: center;font-size: 11px;margin: 0px;margin-top: 10px;">
                                 * Representação real da análise</p>
                             <p
-                                style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;">
-                                <br>Análise por um mapa digital (Ortomosaico), construído<br>pela junção de várias fotos
-                                em uma só. <br><br>Essa análise possui os valores mais próximos da realidade,<br>
-                                recomendada para áreas de pesquisas que necessitam de informações mais precisas em áreas
-                                menores.<br><br>
-                            </p>
-                            <form><a class="btn btn-primary d-block w-100" role="button" href="preços">SAIBA MAIS</a>
+                                style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;"><br>Análise de um mapa digital (ortomosaico), construído pela junção de várias fotos em uma só.<br><br>Essa análise oferece resultados mais próximos da realidade e é recomendada para áreas de pesquisa que exigem informações mais precisas em áreas menores.<br><br></p>
+                            <form><a class="btn btn-primary d-block w-100" role="button" href="precos">SAIBA MAIS</a>
                             </form>
                         </div>
                     </div>
@@ -149,13 +144,8 @@
                                 style="color: var(--bs-gray-900);text-align: center;font-size: 11px;margin: 0px;margin-top: 10px;">
                                 * Simulação da análise</p>
                             <p
-                                style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;">
-                                <br>Análise foto a foto, onde cada foto representa uma porcentagem da área de
-                                produção.<br><br> Os valores da contagem são extrapolados para obter uma estimativa da
-                                área total, o que viabiliza a aplicação em áreas de grandes extensões, onde construir um
-                                Ortomosaicos de alta resolução é inviável.<br><br>
-                            </p>
-                            <form><a class="btn btn-primary d-block w-100" role="button" href="preços">SAIBA MAIS</a>
+                                style="color: var(--bs-gray-900);text-align: center;font-size: 16px;border-top-width: 1px;border-top-style: solid;"><br>Análise foto a foto, em que cada foto representa uma parte da área de produção.<br><br>Os valores da contagem são extrapolados para estimar a população de plantas na área total. Isso viabiliza a aplicação em grandes áreas, onde a construção de um ortomosaico de alta resolução é inviável.<br><br></p>
+                            <form><a class="btn btn-primary d-block w-100" role="button" href="precos">SAIBA MAIS</a>
                             </form>
                         </div>
                     </div>
@@ -165,7 +155,7 @@
         <section class="clean-block clean-info dark" style="padding-bottom: 0px;">
             <div class="container">
                 <div class="block-heading" style="padding-top: 45px;">
-                    <h2 class="text-info"><br>IA de precisão especial para suas culturas<br><br></h2>
+                    <h2 class="text-info"><br>IA de precisão para seus cultivos<br><br></h2>
                 </div>
                 <div class="row align-items-center">
                     <div class="col">
@@ -192,9 +182,7 @@
                     </div>
                     <div class="col-md-5 feature-box"><i class="icon-graph icon"></i>
                         <h4 style="font-size: 23px;">Detecção de falhas</h4>
-                        <p>Falhas que demonstram <b>áreas perdidas no cultivo</b>, estimando seus tamanhos obtemos o
-                            inverso da
-                            informação da contagem.</p>
+                        <p>Identificação de <b>áreas sem plantas no cultivo</b> e estimativa de suas dimensões, complementando as informações da contagem.</p>
                     </div>
                     <br>
                     <div class="col-md-5 feature-box"><i class="material-icons icon">gps_fixed</i>
@@ -203,13 +191,12 @@
                             visualização no aplicativo <b>QGIS</b>.</p>
                     </div>
                     <div class="col-md-5 feature-box"><i class="icon-control-play icon"></i>
-                        <h4 style="font-size: 23px;">Velocidade e Precisão&nbsp;</h4>
-                        <p>Processo totalmente automatizado pelo nosso sistema,<br> <b>70 vezes mais rápido</b> que uma
-                            contagem manual, podendo garantir uma validação <b>acima de 95%.</b>.</p>
+                        <h4 style="font-size: 23px;">Velocidade e precisão&nbsp;</h4>
+                        <p>Processo totalmente automatizado pelo nosso sistema,<br> <b>70 vezes mais rápido</b> que uma contagem manual, com taxa de validação <b>acima de 95%.</b></p>
                     </div>
                 </div>
                 <div class="block-heading" style="padding-top: 30px;">
-                    <h2>Cultivos com aplicação</h2>
+                    <h2>Cultivos atendidos</h2>
                 </div>
                 <div class="owl-carousel owl-theme">
                     <div class="item">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
@@ -36,16 +36,16 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" style="background: linear-gradient(90deg, #2E8B57 0%, #284747 100%), #ffffff;padding-top: 0px;padding-bottom: 0px;">
-        <div class="container"><a href="inicio" style="padding-top: 1%;"><img src="static/img/cv3.webp" alt="Logo CropView" style="height: 70px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon" style="margin-bottom: 0px;padding-bottom: 0px;"></span></button>
+        <div class="container"><a href="inicio" style="padding-top: 1%;"><img src="static/img/cv3.webp" alt="Logo CropView" style="height: 70px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span class="visually-hidden">Alternar navegação</span><span class="navbar-toggler-icon" style="margin-bottom: 0px;padding-bottom: 0px;"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto align-items-xl-center">
                     <li class="nav-item"><a class="nav-link active h-100" href="inicio" style="color: rgba(255,255,255,0.7);font-weight: bold;">Início</a></li>
                     <li class="nav-item"><a class="nav-link h-100" href="requisitos" style="color: rgba(255,255,255,0.9);">Requisitos</a></li>
                     <li class="nav-item"><a class="nav-link h-100" href="precos" style="color: rgba(255,255,255,0.7);">Preços</a></li>
-                    <li class="nav-item"><a class="nav-link active h-100" href="contato" style="color: rgba(255,255,255,0.7);">contato</a></li>
+                    <li class="nav-item"><a class="nav-link active h-100" href="contato" style="color: rgba(255,255,255,0.7);">Contato</a></li>
                     <li class="nav-item">
                         <form method="post" id="languageForm" name="languageForm" action="{{ url_for('set_language') }}">
-                            <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link active" href="#" style="color: rgba(255,255,255,0.7);"><span style="padding: 5px;padding-left: 0px;">Language:&nbsp;</span><img src="static/img/brasil.webp" style="width: 32px;"></a>
+                            <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link active" href="#" style="color: rgba(255,255,255,0.7);"><span style="padding: 5px;padding-left: 0px;">Idioma:&nbsp;</span><img src="static/img/brasil.webp" style="width: 32px;"></a>
                                 <div class="dropdown-menu" style="margin-bottom: 20px;">
                                     <input class="form-control" type="hidden" id="language" name="language">
                                     <div class="dropdown-item" onclick="setLanguage('pt');"><span>Português Brasil</span><img src="static/img/brasil.webp" style="width: 32px;margin-left: 8px;"></div>
@@ -64,7 +64,7 @@
             <div class="container">
                 <div class="block-heading" style="padding-top: 45px;">
                     <h2 class="text-info">Requisitos de qualidade</h2>
-                    <p style="max-width: 700px;color: rgb(33, 37, 41);">A assertividade do nosso serviço esta diretamente ligada a qualidade das imagens obtidas nos cultivos, devido a essa correlação criamos uma alguns requisitos para garantir a qualidade da sua aplicação.</p>
+                    <p style="max-width: 700px;color: rgb(33, 37, 41);">A precisão do nosso serviço está diretamente ligada à qualidade das imagens dos cultivos. Por isso, definimos alguns requisitos para garantir a qualidade da análise.</p>
                 </div>
             </div>
         </section>
@@ -75,7 +75,7 @@
                     <div class="col-md-6">
                         <h3 style="padding-bottom: 20px;"><strong>O que é GSD?</strong><br></h3>
                         <div class="getting-started-info">
-                            <p style="color: rgb(33, 37, 41);">Em tradução literal,&nbsp;<strong>GSD</strong>&nbsp;seria a “distância da amostra do solo”. Essa amostra, no caso, é cada&nbsp;<strong>pixel</strong>&nbsp;da foto capturada com o drone – quando você aplica o máximo de zoom possível em uma foto, é possível identificar os pixels da imagem, como nos exemplos à esquerda.<br></p>
+                            <p style="color: rgb(33, 37, 41);"><strong>GSD</strong> significa <em>Ground Sampling Distance</em>, ou distância de amostragem do solo. É a distância entre os centros de dois pixels consecutivos, medida no terreno. Quanto menor o GSD, mais detalhes podem ser vistos na imagem. Ao ampliar uma foto capturada pelo drone, é possível identificar os pixels, como nos exemplos à esquerda.<br></p>
                         </div>
                     </div>
                 </div>
@@ -94,21 +94,21 @@
                     <tbody>
                         <tr>
                             <td style="padding-top: 1%;padding-bottom: 1%;">GSD</td>
-                            <td style="padding-top: 1%;padding-bottom: 1%;">0,82 Cm/Pixel</td>
-                            <td style="padding-top: 1%;padding-bottom: 1%;">0,27&nbsp;Cm/Pixel<br></td>
+                            <td style="padding-top: 1%;padding-bottom: 1%;">0,82 cm/pixel</td>
+                            <td style="padding-top: 1%;padding-bottom: 1%;">0,27&nbsp;cm/pixel<br></td>
                         </tr>
                         <tr></tr>
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td class="text-center" colspan="4" style="padding-top: 1%;padding-bottom: 1%;font-weight: bold;">Quanto menor o GSD melhor a qualidade do seu resultado</td>
+                            <td class="text-center" colspan="3" style="padding-top: 1%;padding-bottom: 1%;font-weight: bold;">Quanto menor o GSD, maior o nível de detalhe da imagem.</td>
                         </tr>
                     </tfoot>
                 </table>
             </div>
             <div class="container">
                 <div class="block-heading" style="padding-top: 30px;margin-bottom: 0px;">
-                    <p style="max-width: 700px;color: rgb(33, 37, 41);padding-bottom: 15px;">Para calcular o GSD do seu drone utilize uma das plataformas a baixo:</p><a href="https://www.handalselaras.com/calculator/" style="padding-right: 1%;">handalselaras.com</a><a href="https://www.propelleraero.com/gsd-calculator/" style="padding-left: 1%;">propelleraero.com</a>
+                    <p style="max-width: 700px;color: rgb(33, 37, 41);padding-bottom: 15px;">Para calcular o GSD das imagens do seu drone, utilize uma das plataformas abaixo:</p><a href="https://www.handalselaras.com/calculator/" style="padding-right: 1%;">handalselaras.com</a><a href="https://www.propelleraero.com/gsd-calculator/" style="padding-left: 1%;">propelleraero.com</a>
                 </div>
             </div>
         </section>
@@ -119,7 +119,7 @@
                     <div class="col-md-6">
                         <h3 style="padding-bottom: 20px;"><strong>Gerando o ortomosaico</strong></h3>
                         <div class="getting-started-info">
-                            <p style="color: rgb(33, 37, 41);">As imagens utilizadas para gerar o ortomosaico necessitam de coordenadas geográficas para a construção do mapa de seu cultivo, para isso recomendamos a utilização do software PIX4Dcapture onde você configura seu plano de voo a sua disposição.</p>
+                            <p style="color: rgb(33, 37, 41);">As imagens utilizadas para gerar o ortomosaico precisam de coordenadas geográficas para construir o mapa do cultivo. Para planejar o voo, recomendamos o software PIX4Dcapture, que permite configurar o plano de acordo com suas necessidades.</p>
                         </div>
                     </div>
                 </div>

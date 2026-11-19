@@ -3,67 +3,42 @@ from flask import Flask, render_template, request, redirect, url_for, session
 app = Flask(__name__)
 app.secret_key = "segredo"  # necessário para usar session
 
+LANGUAGE_SUFFIXES = {"pt": "1", "en": "2", "es": "3"}
+
+
+def render_localized_page(page):
+	suffix = LANGUAGE_SUFFIXES.get(session.get("lang"), "1")
+	return render_template(f"{page}{suffix}.html")
+
+
 @app.route("/")
 @app.route("/inicio")
 @app.route("/home")
 def index():
-	try:
-		if session["lang"] == "pt":
-			return render_template("index1.html")
-		if session["lang"] == "en":
-			return render_template("index2.html")
-		if session["lang"] == "es":
-			return render_template("index3.html")
-	except:
-		return render_template("index1.html")
+	return render_localized_page("index")
 
 @app.route("/requisitos")
 @app.route("/requirements")
 def requisitos():
-	try:
-		if session["lang"] == "pt":
-			return render_template("requirements1.html")
-		if session["lang"] == "en":
-			return render_template("requirements2.html")
-		if session["lang"] == "es":
-			return render_template("requirements3.html")
-	except:
-		return render_template("requirements1.html")
+	return render_localized_page("requirements")
 
 @app.route("/precios")
 @app.route("/precos")
 @app.route("/pricing")
 def preços():
-	try:
-		if session["lang"] == "pt":
-			return render_template("pricing1.html")
-		if session["lang"] == "en":
-			return render_template("pricing2.html")
-		if session["lang"] == "es":
-			return render_template("pricing3.html")
-	except:
-		return render_template("pricing1.html")
+	return render_localized_page("pricing")
 
 @app.route("/contato")
 @app.route("/contacto")
 @app.route("/contact")
 def contato():
-	try:
-		if session["lang"] == "pt":
-			return render_template("contactUs1.html")
-		if session["lang"] == "en":
-			return render_template("contactUs2.html")
-		if session["lang"] == "es":
-			return render_template("contactUs3.html")
-	except:
-		return render_template("contactUs1.html")
+	return render_localized_page("contactUs")
 
 @app.route("/set_language", methods=["POST"])
 def set_language():
 	lang = request.form.get("language")
-	if lang:
+	if lang in LANGUAGE_SUFFIXES:
 		session["lang"] = lang  # salva na sessão
-	print(session["lang"])
 	# volta para a página anterior, ou index se não tiver referrer
 	return redirect(request.referrer or url_for("index"))
 

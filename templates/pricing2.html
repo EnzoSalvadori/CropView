@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="static/css/vanilla-zoom.min.css">
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="CropView plants detection and analysis technology" />
+    <meta property="og:title" content="CropView plant detection and analysis technology" />
     <meta property="og:description"
-        content="Service that performs the automatic counting of plants, through an artificial intelligence trained to detect them in aerial images." />
+        content="Automatic plant counting using artificial intelligence trained to detect plants in aerial images." />
     <meta property="og:image" content="static/img/scenery/cropview-contagem-de-plantas.webp" />
     <meta property="og:image:width" content="256" />
     <meta property="og:image:height" content="256" />
@@ -49,7 +49,7 @@
                 <ul class="navbar-nav ms-auto align-items-xl-center">
                     <li class="nav-item"><a class="nav-link active h-100" href="home" style="color: rgba(255,255,255,0.7);font-weight: bold;">Home</a></li>
                     <li class="nav-item"><a class="nav-link h-100" href="requirements" style="color: rgba(255,255,255,0.7);">Requirements</a></li>
-                    <li class="nav-item"><a class="nav-link h-100" href="pricing" style="color: rgba(255,255,255,0.9);">pricing</a></li>
+                    <li class="nav-item"><a class="nav-link h-100" href="pricing" style="color: rgba(255,255,255,0.9);">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link active h-100" href="contact" style="color: rgba(255,255,255,0.7);">Contact</a></li >
                     <li class="nav-item">
                         <form method="post" id="languageForm" name="languageForm" action="{{ url_for('set_language') }}">
@@ -77,17 +77,17 @@
                     <div class="col-md-5 col-lg-6">
                         <div class="clean-pricing-item">
                             <div class="heading" style="padding-bottom: 0px;">
-                                <h3>Complete application</h3>
+                                <h3>Full-area analysis</h3>
                             </div>
-                            <p style="color: rgb(33, 37, 41);text-align: center;margin-bottom: 25px;"><strong>✓&nbsp;</strong>Map application (Orthomosaic)&nbsp;<br ><br><strong>✓&nbsp;</strong>Detection and counting of plants<br><br><strong>✓&nbsp;</strong>Detection and dimensioning of faults&nbsp;<br><br><strong> ✓&nbsp;</strong>High precision data from the entire analyzed area<br><br><strong>✓&nbsp;</strong>Separation of information by fields and lines<br><br><strong>✓&nbsp ;</strong>Calculations of mean, standard deviation and variation of distances<br></p>
+                            <p style="color: rgb(33, 37, 41);text-align: center;margin-bottom: 25px;"><strong>✓&nbsp;</strong>Map-based analysis (orthomosaic)&nbsp;<br ><br><strong>✓&nbsp;</strong>Detection and counting of plants<br><br><strong>✓&nbsp;</strong>Detection and measurement of plant gaps&nbsp;<br><br><strong> ✓&nbsp;</strong>High precision data from the entire analyzed area<br><br><strong>✓&nbsp;</strong>Data organized by fields and rows<br><br><strong>✓&nbsp;</strong>Calculation of mean, standard deviation and variation in spacing<br></p>
                             <div class="table-responsive">
                                 <table class="table">
                                     <thead>
                                         <tr>
                                             <th class="col-4">Field 1</th>
-                                            <th>Line 1</th>
-                                            <th>Line 2</th>
-                                            <th>Line 3</th>
+                                            <th>Row 1</th>
+                                            <th>Row 2</th>
+                                            <th>Row 3</th>
                                             <th>...</th>
                                         </tr>
                                     </thead>
@@ -100,7 +100,7 @@
                                             <td style="font-weight: bold;">...</td>
                                         </tr>
                                         <tr>
-                                            <td class="col-4">Number of Failures</td>
+                                            <td class="col-4">Number of plant gaps</td>
                                             <td>0</td>
                                             <td>1</td>
                                             <td>3</td>
@@ -114,29 +114,29 @@
                                     <thead>
                                         <tr>
                                             <th>Field 1</th>
-                                            <th>Line 1</th>
-                                            <th>Line 2</th>
-                                            <th>Line 3</th>
+                                            <th>Row 1</th>
+                                            <th>Row 2</th>
+                                            <th>Row 3</th>
                                             <th>...</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="col-4">Fail 1 (cm)</td>
+                                            <td class="col-4">Gap 1 (cm)</td>
                                             <td>0</td>
                                             <td>0.29<br></td>
                                             <td>0.71<br></td>
                                             <td style="font-weight: bold;">...</td>
                                         </tr>
                                         <tr>
-                                            <td class="col-4">Fail 2&nbsp;(cm)<br></td>
+                                            <td class="col-4">Gap 2&nbsp;(cm)<br></td>
                                             <td>0</td>
                                             <td>0</td>
                                             <td>0.30<br></td>
                                             <td style="font-weight: bold;">...</td>
                                         </tr>
                                         <tr>
-                                            <td class="col-4">Fail 3 (cm)<br></td>
+                                            <td class="col-4">Gap 3 (cm)<br></td>
                                             <td>0</td>
                                             <td>0</td>
                                             <td>0.32<br></td>
@@ -147,15 +147,15 @@
                             </div><div class="price">
                                
                             </div>
-                            <form><a class="btn btn-primary d-block w-100" role="button" href="contact">HIRE IT NOW</a></form>
+                            <form><a class="btn btn-primary d-block w-100" role="button" href="contact">REQUEST SERVICE</a></form>
                         </div>
                     </div>
                     <div class="col-md-5 col-lg-6">
                         <div class="clean-pricing-item">
                             <div class="heading" style="padding-bottom: 0px;">
-                                <h3>Statistical Application</h3>
+                                <h3>Statistical analysis</h3>
                             </div>
-                            <p style="color: rgb(33, 37, 41);text-align: center;margin-bottom: 70px;"><strong>✓&nbsp;</strong>Photo application<br><br><strong>✓&nbsp;</strong>Detection and counting of plants<br><br><strong>✓&nbsp;</strong>Detection and dimensioning of failures&nbsp;<br><br><strong>✓&nbsp;</strong>Extrapolation of plant population for one hectare<br><br><strong>✓ </strong>Mean, standard deviation and variation of distances calculations<br></p>
+                            <p style="color: rgb(33, 37, 41);text-align: center;margin-bottom: 70px;"><strong>✓&nbsp;</strong>Photo-based analysis<br><br><strong>✓&nbsp;</strong>Detection and counting of plants<br><br><strong>✓&nbsp;</strong>Detection and measurement of plant gaps&nbsp;<br><br><strong>✓&nbsp;</strong>Estimated plant population per hectare<br><br><strong>✓ </strong>Calculation of mean, standard deviation and variation in spacing<br></p>
                             <div class="table-responsive">
                                 <table class="table" style="margin-bottom: 12px;">
                                     <thead>
@@ -163,7 +163,7 @@
                                             <th class="col-2" style="text-align: left;">Image 1</th>
                                             <th><strong>Distances (cm)</strong><br></th>
                                             <th>Number of plants</th>
-                                            <th>Extrapolated to hectare</th>
+                                            <th>Estimated plants per hectare</th>
                                             <th>...</th>
                                         </tr>
                                     </thead>
@@ -216,7 +216,7 @@
                             <div class="price">
                                
                             </div>
-                            <form><a class="btn btn-primary d-block w-100" role="button" href="contact">HIRE IT NOW</a></form>
+                            <form><a class="btn btn-primary d-block w-100" role="button" href="contact">REQUEST SERVICE</a></form>
                         </div>
                     </div>
                 </div>
@@ -225,7 +225,7 @@
         <section class="clean-block clean-form dark" style="padding-bottom: 0px;">
             <div class="container">
                 <div class="block-heading" style="padding-top: 0px;">
-                    <p style="max-width: 700px;">All price values ​​shown are merely estimates, for each analysis a specific budget is made.</p>
+                    <p style="max-width: 700px;">Prices are estimates. We provide a tailored quote for each analysis.</p>
                 </div>
             </div>
         </section>

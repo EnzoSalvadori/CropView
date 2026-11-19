@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -35,16 +35,16 @@
 
 <body>
     <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" style="background: linear-gradient(90deg, #2E8B57 0%, #284747 100%), #ffffff;padding-top: 0px;padding-bottom: 0px;">
-        <div class="container"><a href="inicio" style="padding-top: 1%;"><img src="static/img/cv3.webp" style="height: 70px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon" style="margin-bottom: 0px;padding-bottom: 0px;"></span></button>
+        <div class="container"><a href="inicio" style="padding-top: 1%;"><img src="static/img/cv3.webp" style="height: 70px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span class="visually-hidden">Alternar navegación</span><span class="navbar-toggler-icon" style="margin-bottom: 0px;padding-bottom: 0px;"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto align-items-xl-center">
                     <li class="nav-item"><a class="nav-link active h-100" href="inicio" style="color: rgba(255,255,255,0.7);font-weight: bold;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inicio</font></font></a></li>
-                    <li class="nav-item"><a class="nav-link h-100" href="requisitos" style="color: rgba(255,255,255,0.9);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">requisitos</font></font></a></li>
-                    <li class="nav-item"><a class="nav-link h-100" href="precios" style="color: rgba(255,255,255,0.7);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">precios</font></font></a></li>
+                    <li class="nav-item"><a class="nav-link h-100" href="requisitos" style="color: rgba(255,255,255,0.9);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Requisitos</font></font></a></li>
+                    <li class="nav-item"><a class="nav-link h-100" href="precios" style="color: rgba(255,255,255,0.7);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precios</font></font></a></li>
                     <li class="nav-item"><a class="nav-link active h-100" href="contacto" style="color: rgba(255,255,255,0.7);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacto</font></font></a></li>
                     <li class="nav-item">
                         <form method="post" id="languageForm" name="languageForm" action="{{ url_for('set_language') }}">
-                            <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link active" href="#" style="color: rgba(255,255,255,0.7);"><span style="padding: 5px;padding-left: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">language:&nbsp;</font></font></span><img src="static/img/espanha.webp" style="width: 32px;"></a>
+                            <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link active" href="#" style="color: rgba(255,255,255,0.7);"><span style="padding: 5px;padding-left: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Idioma:&nbsp;</font></font></span><img src="static/img/espanha.webp" style="width: 32px;"></a>
                                 <div class="dropdown-menu" style="margin-bottom: 20px;">
                                     <input class="form-control" type="hidden" id="language" name="language">
                                     <div class="dropdown-item" onclick="setLanguage('pt');"><span>Português Brasil</span><img src="static/img/brasil.webp" style="width: 32px;margin-left: 8px;"></div>
@@ -62,8 +62,8 @@
         <section class="clean-block clean-info dark" style="background: rgb(255,255,255);padding-bottom: 0px;">
             <div class="container">
                 <div class="block-heading" style="padding-top: 45px;">
-                    <h2 class="text-info"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Requerimientos de calidad</font></font></h2>
-                    <p style="max-width: 700px;color: rgb(33, 37, 41);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">La asertividad de nuestro servicio está directamente ligada a la calidad de las imágenes obtenidas en los cultivos, debido a esta correlación creamos algunos requisitos para garantizar la calidad de su aplicación.</font></font></p>
+                    <h2 class="text-info"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Requisitos de calidad</font></font></h2>
+                    <p style="max-width: 700px;color: rgb(33, 37, 41);">La precisión de nuestro servicio depende directamente de la calidad de las imágenes de los cultivos. Por eso, hemos definido algunos requisitos para garantizar la calidad del análisis.</p>
                 </div>
             </div>
         </section>
@@ -74,7 +74,7 @@
                     <div class="col-md-6">
                         <h3 style="padding-bottom: 20px;"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¿Qué es GSD?</font></font></strong><br></h3>
                         <div class="getting-started-info">
-                            <p style="color: rgb(33, 37, 41);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">En traducción literal,&nbsp; </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GSD</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> &nbsp;sería la "distancia de la muestra de suelo". </font><font style="vertical-align: inherit;">Esta muestra, en este caso, es cada&nbsp; </font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">píxel</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> &nbsp;de la foto capturada con el dron – cuando haces zoom lo más posible en una foto, es posible identificar los píxeles de la imagen, como en los ejemplos de la izquierda.</font></font><br></p>
+                            <p style="color: rgb(33, 37, 41);"><strong>GSD</strong> significa <em>Ground Sampling Distance</em>, o distancia de muestreo del terreno. Es la distancia entre los centros de dos píxeles consecutivos, medida sobre el terreno. Cuanto menor es el GSD, más detalles se pueden ver. Al ampliar una foto capturada con el dron, se pueden distinguir los píxeles, como en los ejemplos de la izquierda.<br></p>
                         </div>
                     </div>
                 </div>
@@ -100,14 +100,14 @@
                     </tbody>
                     <tfoot>
                         <tr>
-                            <td class="text-center" colspan="4" style="padding-top: 1%;padding-bottom: 1%;font-weight: bold;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuanto menor sea el GSD, mejor será la calidad de su resultado.</font></font></td>
+                            <td class="text-center" colspan="3" style="padding-top: 1%;padding-bottom: 1%;font-weight: bold;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuanto menor sea el GSD, mayor será el nivel de detalle de la imagen.</font></font></td>
                         </tr>
                     </tfoot>
                 </table>
             </div>
             <div class="container">
                 <div class="block-heading" style="padding-top: 30px;margin-bottom: 0px;">
-                    <p style="max-width: 700px;color: rgb(33, 37, 41);padding-bottom: 15px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Para calcular el GSD de su dron, use una de las siguientes plataformas:</font></font></p><a href="https://www.handalselaras.com/calculator/" style="padding-right: 1%;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">handalselaras.com </font></font></a><a href="https://www.propelleraero.com/gsd-calculator/" style="padding-left: 1%;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">propelleraero.com</font></font></a>
+                    <p style="max-width: 700px;color: rgb(33, 37, 41);padding-bottom: 15px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Para calcular el GSD de las imágenes de su dron, use una de las siguientes plataformas:</font></font></p><a href="https://www.handalselaras.com/calculator/" style="padding-right: 1%;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">handalselaras.com </font></font></a><a href="https://www.propelleraero.com/gsd-calculator/" style="padding-left: 1%;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">propelleraero.com</font></font></a>
                 </div>
             </div>
         </section>
@@ -118,7 +118,7 @@
                     <div class="col-md-6">
                         <h3 style="padding-bottom: 20px;"><strong>Generando el ortomosaico</strong></h3>
                         <div class="getting-started-info">
-                            <p style="color: rgb(33, 37, 41);">Las imágenes utilizadas para generar el ortomosaico requieren de coordenadas geográficas para construir el mapa de tu cultivo, para eso te recomendamos utilizar el software PIX4Dcapture donde configuras tu plan de vuelo a tu disposición.</p>
+                            <p style="color: rgb(33, 37, 41);">Las imágenes utilizadas para generar el ortomosaico necesitan coordenadas geográficas para construir el mapa del cultivo. Para planificar el vuelo, recomendamos PIX4Dcapture, que permite configurar el plan según sus necesidades.</p>
                         </div>
                     </div>
                 </div>

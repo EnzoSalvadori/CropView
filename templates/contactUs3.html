@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -35,16 +35,16 @@
 
 <body style="display: flex;flex-direction: column;min-height: 100%;background: rgb(246, 246, 246);">
     <nav class="navbar navbar-light navbar-expand-lg fixed-top clean-navbar" style="background: linear-gradient(90deg, #2E8B57 0%, #284747 100%), #ffffff;padding-top: 0px;padding-bottom: 0px;">
-        <div class="container"><a href="inicio" style="padding-top: 1%;"><img src="static/img/cv3.webp" style="height: 70px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">navegación de palanca</font></font></span><span class="navbar-toggler-icon" style="margin-bottom: 0px;padding-bottom: 0px;"></span></button>
+        <div class="container"><a href="inicio" style="padding-top: 1%;"><img src="static/img/cv3.webp" style="height: 70px;"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="background: rgb(234,234,234);padding-top: 4px;padding-bottom: 4px;height: 40px;border-radius: 25px;"><span class="visually-hidden"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Alternar navegación</font></font></span><span class="navbar-toggler-icon" style="margin-bottom: 0px;padding-bottom: 0px;"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto align-items-xl-center">
                     <li class="nav-item"><a class="nav-link active h-100" href="inicio" style="color: rgba(255,255,255,0.7);font-weight: bold;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inicio</font></font></a></li>
-                    <li class="nav-item"><a class="nav-link h-100" href="requisitos" style="color: rgba(255,255,255,0.7);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">requisitos</font></font></a></li>
-                    <li class="nav-item"><a class="nav-link h-100" href="precios" style="color: rgba(255,255,255,0.7);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">precios</font></font></a></li>
+                    <li class="nav-item"><a class="nav-link h-100" href="requisitos" style="color: rgba(255,255,255,0.7);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Requisitos</font></font></a></li>
+                    <li class="nav-item"><a class="nav-link h-100" href="precios" style="color: rgba(255,255,255,0.7);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Precios</font></font></a></li>
                     <li class="nav-item"><a class="nav-link active h-100" href="contacto" style="color: rgba(255,255,255,0.9);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacto</font></font></a></li>
                     <li class="nav-item">
                         <form method="post" id="languageForm" name="languageForm" action="{{ url_for('set_language') }}">
-                            <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link active" href="#" style="color: rgba(255,255,255,0.7);"><span style="padding: 5px;padding-left: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">language:&nbsp;</font></font></span><img src="static/img/espanha.webp" style="width: 32px;"></a>
+                            <div class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown" class="nav-link active" href="#" style="color: rgba(255,255,255,0.7);"><span style="padding: 5px;padding-left: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Idioma:&nbsp;</font></font></span><img src="static/img/espanha.webp" style="width: 32px;"></a>
                                 <div class="dropdown-menu" style="margin-bottom: 20px;">
                                     <input class="form-control" type="hidden" id="language" name="language">
                                     <div class="dropdown-item" onclick="setLanguage('pt');"><span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Português Brasil</font></font></span><img src="static/img/brasil.webp" style="width: 32px;margin-left: 8px;"></div>
@@ -63,7 +63,7 @@
             <div class="container">
                 <div class="block-heading" style="padding-top: 45px;">
                     <h2 class="text-info"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contáctenos</font></font></h2>
-                    <p style="max-width: 700px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Póngase en contacto para solicitar una solicitud de revisión de sus imágenes o para hacer cualquier pregunta relacionada con nuestro servicio.</font></font></p>
+                    <p style="max-width: 700px;">Póngase en contacto con nosotros para solicitar un análisis de sus imágenes o resolver dudas sobre nuestro servicio.</p>
                 </div>
             </div>
             <img src="static/img/cv2.webp" 
@@ -72,7 +72,7 @@
             <section class="clean-block clean-info dark" style="background: transparent;padding-top: 10px;padding-bottom: 10px;">
                 <div class="container">
                     <div class="block-heading" style="padding-top: 15px;margin-bottom: 0px;font-size: 19px;padding-bottom: 15px;">
-                        <p style="max-width: 700px;color: rgb(33, 37, 41);padding-bottom: 15px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">correo electrónico o WhatsApp.</font></font></p><a href="mailto:enzocropview@gmail.com" style="padding-right: 1%;"><i class="fa fa-send" style="padding-left: 1%;padding-right: 1%;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">enzocropview@gmail.com</font></font></a><a href="https://api.whatsapp.com/send?phone=5542998650083" target="_parent" style="padding-right: 1%;"><i class="fa fa-whatsapp" style="padding-left: 1%;padding-right: 1%;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+55 (42) 99865-0083</font></font><br></a>
+                        <p style="max-width: 700px;color: rgb(33, 37, 41);padding-bottom: 15px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Correo electrónico o WhatsApp.</font></font></p><a href="mailto:enzocropview@gmail.com" style="padding-right: 1%;"><i class="fa fa-send" style="padding-left: 1%;padding-right: 1%;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">enzocropview@gmail.com</font></font></a><a href="https://api.whatsapp.com/send?phone=5542998650083" target="_parent" style="padding-right: 1%;"><i class="fa fa-whatsapp" style="padding-left: 1%;padding-right: 1%;"></i><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">+55 (42) 99865-0083</font></font><br></a>
                     </div>
                 </div>
             </section>

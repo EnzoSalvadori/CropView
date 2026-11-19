@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="static/css/vanilla-zoom.min.css">
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="CropView plants detection and analysis technology" />
+    <meta property="og:title" content="CropView plant detection and analysis technology" />
     <meta property="og:description"
-        content="Service that performs the automatic counting of plants, through an artificial intelligence trained to detect them in aerial images." />
+        content="Automatic plant counting using artificial intelligence trained to detect plants in aerial images." />
     <meta property="og:image" content="static/img/scenery/cropview-contagem-de-plantas.webp" />
     <meta property="og:image:width" content="256" />
     <meta property="og:image:height" content="256" />
@@ -49,7 +49,7 @@
                 <ul class="navbar-nav ms-auto align-items-xl-center">
                     <li class="nav-item"><a class="nav-link active h-100" href="home" style="color: rgba(255,255,255,0.7);font-weight: bold;">Home</a></li>
                     <li class="nav-item"><a class="nav-link h-100" href="requirements" style="color: rgba(255,255,255,0.9);">Requirements</a></li>
-                    <li class="nav-item"><a class="nav-link h-100" href="pricing" style="color: rgba(255,255,255,0.7);">pricing</a></li>
+                    <li class="nav-item"><a class="nav-link h-100" href="pricing" style="color: rgba(255,255,255,0.7);">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link active h-100" href="contact" style="color: rgba(255,255,255,0.7);">Contact</a></li >
                     <li class="nav-item">
                         <form method="post" id="languageForm" name="languageForm" action="{{ url_for('set_language') }}">
@@ -71,7 +71,7 @@
         <div class="container">
             <div class="block-heading" style="padding-top: 45px;">
                 <h2 class="text-info">Quality requirements</h2>
-                <p style="max-width: 700px;color: rgb(33, 37, 41);">The assertiveness of our service is directly linked to the quality of the images obtained in the crops, due to this correlation we created some requirements to guarantee the quality of your application.</p>
+                <p style="max-width: 700px;color: rgb(33, 37, 41);">The accuracy of our service depends directly on the quality of the crop images. We have therefore defined a few requirements to ensure the quality of the analysis.</p>
             </div>
         </div>
     </section>
@@ -82,7 +82,7 @@
                 <div class="col-md-6">
                     <h3 style="padding-bottom: 20px;"><strong>What is GSD?</strong><br></h3>
                     <div class="getting-started-info">
-                        <p style="color: rgb(33, 37, 41);">In literal translation,&nbsp;<strong>GSD</strong>&nbsp; would be the “distance of the soil sample”. This sample, in this case, is each&nbsp;<strong>pixel</strong>&nbsp;of the photo captured with the drone – when you apply the maximum possible zoom in a photo, it is possible to identify the pixels of the image, as in the examples at left.<br></p>
+                        <p style="color: rgb(33, 37, 41);"><strong>GSD</strong> stands for <em>Ground Sampling Distance</em>: the distance between the centers of two adjacent pixels, measured on the ground. A lower GSD reveals finer details. When you zoom in on a drone photo, you can see the individual pixels, as shown in the examples on the left.<br></p>
                     </div>
                 </div>
             </div>
@@ -101,21 +101,21 @@
                 <tbody>
                     <tr>
                         <td style="padding-top: 1%;padding-bottom: 1%;">GSD</td>
-                        <td style="padding-top: 1%;padding-bottom: 1%;">0.82 Cm/Pixel</td>
-                        <td style="padding-top: 1%;padding-bottom: 1%;">0.27&nbsp;Cm/Pixel<br></td>
+                        <td style="padding-top: 1%;padding-bottom: 1%;">0.82 cm/pixel</td>
+                        <td style="padding-top: 1%;padding-bottom: 1%;">0.27&nbsp;cm/pixel<br></td>
                     </tr>
                     <tr></tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td class="text-center" colspan="4" style="padding-top: 1%;padding-bottom: 1%;font-weight: bold;">The lower the GSD, the better the quality of your result< /td>
+                        <td class="text-center" colspan="3" style="padding-top: 1%;padding-bottom: 1%;font-weight: bold;">A lower GSD reveals finer image details.</td>
                     </tr>
                 </tfoot>
             </table>
         </div>
         <div class="container">
             <div class="block-heading" style="padding-top: 30px;margin-bottom: 0px;">
-                <p style="max-width: 700px;color: rgb(33, 37, 41);padding-bottom: 15px;">To calculate your drone's GSD use one of the platforms below:</p><a href="https://www.handalselaras.com/calculator/" style="padding-right: 1%;">handalselaras.com</a><a href="https://www.propelleraero.com/ gsd-calculator/" style="padding-left: 1%;">propelleraero.com</a>
+                <p style="max-width: 700px;color: rgb(33, 37, 41);padding-bottom: 15px;">To calculate the GSD of your drone images, use one of the platforms below:</p><a href="https://www.handalselaras.com/calculator/" style="padding-right: 1%;">handalselaras.com</a><a href="https://www.propelleraero.com/gsd-calculator/" style="padding-left: 1%;">propelleraero.com</a>
             </div>
         </div>
     </section>
@@ -126,7 +126,7 @@
                 <div class="col-md-6">
                     <h3 style="padding-bottom: 20px;"><strong>Generating the orthomosaic</strong></h3>
                     <div class="getting-started-info">
-                        <p style="color: rgb(33, 37, 41);">The images used to generate the orthomosaic require geographic coordinates to build the map of your crop, for that we recommend using the PIX4Dcapture software where you configure your flight plan at your disposal.</p>
+                        <p style="color: rgb(33, 37, 41);">The images used to create the orthomosaic need geographic coordinates to build a map of the crop area. For flight planning, we recommend PIX4Dcapture, which lets you configure the flight plan to suit your needs.</p>
                     </div>
                 </div>
             </div>
